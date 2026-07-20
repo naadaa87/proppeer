@@ -1,66 +1,40 @@
-# 프롭피어 PROPPEER — 공식 홈페이지
+# PROPPEER 홈페이지 (멀티페이지)
 
-부동산 업계 신뢰 네트워크(Real Estate Trust Network) 프롭피어의 원페이지 홈페이지입니다.
-정적 사이트(HTML 단일 파일)로, 빌드 과정 없이 GitHub + Cloudflare Pages에 바로 배포할 수 있습니다.
+프롭피어 공식 사이트 정적 파일입니다. 빌드 과정 없이 이 폴더 그대로 배포하면 됩니다.
 
-## 파일 구성
+## 구성
 
-```
-proppeer-site/
-├── index.html      # 홈페이지 전체 (CSS·JS·로고 이미지 내장)
-├── assets/
-│   └── og.jpg      # SNS 공유용 미리보기 이미지 (1200×630)
-└── README.md
-```
+| 파일 | 내용 |
+|---|---|
+| `index.html` | 홈 — 핵심 가치, 프로필 카드 예시, 두 축(신뢰/연결), 작동 방식, 오픈 이벤트 |
+| `trust.html` | 신뢰 시스템 — 검증등급 V0–V5, 인증뱃지, 거래증빙 후기·차원별 평점 |
+| `connect.html` | 연결·협업 — 전문가 검색, 딜·프로젝트 보드, 레퍼런스, 실명 커뮤니티 |
+| `membership.html` | 멤버십 — 오픈 이벤트(9/30까지 무료), 요금 안내, FAQ |
+| `safety.html` | 신뢰와 안전 — 운영 원칙, 분쟁 처리 절차, 표현의 원칙 |
+| `join.html` | 가입 신청 — Founding 500 안내와 신청 폼 |
+| `styles.css` / `main.js` | 전 페이지 공용 스타일과 스크립트 |
+| `assets/` | 로고, 파비콘, OG 이미지 |
 
-로고와 파비콘은 index.html 안에 내장되어 있어 별도 이미지 경로가 깨질 일이 없습니다.
+## 배포 (GitHub → Cloudflare Pages)
 
-## GitHub + Cloudflare Pages 배포 절차
+1. 이 폴더의 파일 전체를 GitHub 저장소에 올립니다. (`index.html`이 저장소 루트에 오도록)
+2. Cloudflare 대시보드 → **Workers & Pages → Create → Pages → Connect to Git**에서 저장소 선택.
+3. 빌드 설정은 모두 비워 둡니다. Framework preset **None**, Build command 없음, Output directory `/`.
+4. Deploy 후 발급되는 `*.pages.dev` 주소로 확인하고, 필요하면 Custom domains에서 도메인을 연결합니다.
+5. 이후에는 GitHub에 커밋할 때마다 자동으로 재배포됩니다.
 
-1. **GitHub 저장소 생성** — 예: `proppeer-site` (Public/Private 무관)
-2. **파일 업로드** — 이 폴더의 `index.html`, `assets/`, `README.md`를 저장소 루트에 푸시
-   ```bash
-   git init
-   git add .
-   git commit -m "PROPPEER homepage v1.0"
-   git branch -M main
-   git remote add origin https://github.com/<계정명>/proppeer-site.git
-   git push -u origin main
-   ```
-3. **Cloudflare 대시보드** → Workers & Pages → **Create** → **Pages** → **Connect to Git**
-4. 방금 만든 저장소 선택 후 빌드 설정:
-   - Framework preset: **None**
-   - Build command: **(비워두기)**
-   - Build output directory: **/** (루트)
-5. **Save and Deploy** — 약 1분 뒤 `https://proppeer-site.pages.dev` 형태의 주소가 발급됩니다.
-6. 이후 GitHub에 푸시할 때마다 자동으로 재배포됩니다.
+## 배포 전 꼭 바꿀 것
 
-### 커스텀 도메인 연결
-Pages 프로젝트 → **Custom domains** → 도메인 입력(예: proppeer.kr) → 안내에 따라 DNS 레코드 추가.
-도메인이 이미 Cloudflare에 등록되어 있으면 클릭 몇 번으로 완료됩니다.
+1. **신청 접수 이메일** — `main.js` 상단의 `var CONTACT = "founding@proppeer.kr";`를 실제 주소로 교체하세요. 가입 폼이 이 주소로 메일을 엽니다.
+2. **OG 이미지 절대 주소** — 도메인 확정 후 각 HTML의 `<meta property="og:image" content="assets/og.jpg">`를 `https://도메인/assets/og.jpg` 형태로 바꾸면 카카오톡·SNS 공유 미리보기가 정상 표시됩니다.
 
-## 배포 후 반드시 수정할 것 2가지
+## 자주 고치게 될 문구 위치
 
-1. **사전등록 접수 이메일** — 현재 폼은 방문자의 메일 앱을 여는 방식(mailto)이며, 수신 주소가
-   임시값입니다. `index.html`에서 아래 줄을 실제 주소로 교체하세요.
-   ```js
-   var CONTACT='founding@proppeer.kr'; /* TODO: 실제 접수 이메일로 교체하세요 */
-   ```
-   추후 Google Form, Tally, Cloudflare Pages Functions 등으로 폼을 교체할 수 있습니다.
-2. **og:image 절대 주소** — 도메인 확정 후 `<meta property="og:image" ...>` 값을
-   `https://도메인/assets/og.jpg` 형태의 전체 주소로 바꿔야 카카오톡·SNS 공유 미리보기가 나옵니다.
+- **오픈 이벤트 기간/문구**: 각 HTML 상단의 `.topbar` 한 줄, `index.html`의 히어로 배지·하단 이벤트 밴드, `membership.html`의 히어로·카드·안내문, `join.html`의 혜택 목록.
+- **요금**: `membership.html` 카드의 `m-orig` 부분. 현재는 "정식 요금(예정)"으로 표기되어 있습니다.
+- **프로필 카드·검색 결과 예시**: `index.html`, `connect.html`의 인물·수치는 모두 화면 예시이며 "표시 예시/화면 예시" 태그가 붙어 있습니다.
 
-## 커스터마이징 포인트
+## 참고
 
-- **브랜드 컬러**: `index.html` 상단 `:root`의 CSS 변수에 무드보드 컬러가 정의되어 있습니다.
-  (Deep Navy `#0D1B2A` · Muted Gold `#B8945A` · Ivory `#F7F6F2` · Cool Gray `#6B7280` · Soft Blue `#C7D7EA`)
-- **섹션 구성**: 왜 프롭피어 → 신뢰 체계(6대 분리) → 검증등급 V0–V5 → 인증뱃지 → 평점·신뢰지표 →
-  후기·레퍼런스 → 딜소싱 → 멤버십 → 신뢰와 안전 → 로드맵 → Founding 500 사전등록
-- **가격 표기**: 기획서 기준 "가격 가정"으로 표기되어 있습니다. 확정 시 멤버십 섹션에서 수정하세요.
-
-## 고지
-
-본 페이지의 기능·가격·정책 문구는 사업기획서 기준의 준비 단계 안내이며,
-인물 평판 공개·개인정보 처리 관련 문구는 출시 전 법률 검토 후 확정하는 것을 전제로 작성되었습니다.
-
-© 2026 PROPPEER · Verified People, Trusted Deals
+- 웹폰트(Pretendard, IBM Plex Mono)는 CDN에서 불러오며, 차단된 환경에서는 시스템 폰트로 자연스럽게 대체됩니다.
+- 폼은 서버 없이 mailto 방식으로 동작합니다. 추후 Formspree, Tally, 자체 API 등으로 바꿀 때는 `main.js`의 `joinForm` 부분만 교체하면 됩니다.

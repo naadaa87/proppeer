@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가입 신청 — 프롭피어 PROPPEER</title>
+<meta name="description" content="검증 네트워크의 첫 500명을 초대합니다. 9월 30일까지 모든 멤버십 무료 등록.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="가입 신청 — 프롭피어 PROPPEER">
+<meta property="og:description" content="검증 네트워크의 첫 500명을 초대합니다. 9월 30일까지 모든 멤버십 무료 등록.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="theme-color" content="#0D1B2A">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<div class="topbar"><b>오픈 이벤트</b> · 9월 30일까지 모든 멤버십을 무료로 등록할 수 있습니다 <a href="membership.html">자세히 보기</a></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="nav-logo" href="index.html" aria-label="프롭피어 홈"><img src="assets/logo-nav.png" alt="PROPPEER" width="520" height="69"></a>
+    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-label="메뉴 열기" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks" aria-label="주 메뉴">
+      <a href="trust.html">신뢰 시스템</a>
+      <a href="connect.html">연결·협업</a>
+      <a href="membership.html">멤버십</a>
+      <a href="safety.html">신뢰와 안전</a>
+      <a class="nav-cta" href="join.html">무료로 시작하기</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="sec sec-navy" style="padding-top:88px" id="join">
+  <div class="wrap join-in">
+    <div class="join-copy rv">
+      <span class="eyebrow">Founding 500</span>
+      <h2>검증 네트워크의<br><em>첫 500명</em>을 초대합니다</h2>
+      <p>프롭피어는 서울·수도권의 상업용 부동산과 공실 개발 분야 실무자를 중심으로 초대·인증형 커뮤니티로 시작합니다. 실제 거래와 프로젝트가 있는 분을 우선 초대합니다.</p>
+      <ul class="join-points">
+        <li>중개 · 개발/시행 · 시공/인테리어 · 공간운영 · 투자/금융 · 전문서비스</li>
+        <li>오픈 이벤트 — 9월 30일까지 모든 멤버십 무료, 결제 정보 없이 등록</li>
+        <li>프로필 구축과 대표 프로젝트 검증을 지원해 드립니다</li>
+        <li>창립 회원이라도 신뢰 우대는 없습니다 — 검증 기준은 모두 같습니다</li>
+      </ul>
+    </div>
+    <form class="join-form rv" id="joinForm" novalidate>
+      <h3>가입 신청</h3>
+      <p class="jf-sub">남겨 주신 정보는 창립 회원 초대와 안내 목적으로만 사용합니다.</p>
+      <div class="jf-row">
+        <div class="jf-field"><label for="jfName">이름</label><input id="jfName" name="name" type="text" autocomplete="name" required placeholder="성함"></div>
+        <div class="jf-field"><label for="jfRole">역할군</label>
+          <select id="jfRole" name="role" required>
+            <option value="" selected disabled>선택해 주세요</option>
+            <option>중개 (상업용/주거)</option>
+            <option>개발 · 시행 · 디벨로퍼</option>
+            <option>시공 · 인테리어 · PM/CM</option>
+            <option>공간운영 · 브랜드 사업자</option>
+            <option>소유자 · 발주자</option>
+            <option>투자 · 금융 · 대주</option>
+            <option>법무 · 세무 · 감정 · 컨설팅</option>
+            <option>기타</option>
+          </select>
+        </div>
+      </div>
+      <div class="jf-field"><label for="jfOrg">소속 · 직함</label><input id="jfOrg" name="org" type="text" autocomplete="organization" placeholder="예: OO개발 · 개발팀장"></div>
+      <div class="jf-field"><label for="jfEmail">이메일</label><input id="jfEmail" name="email" type="email" autocomplete="email" required placeholder="name@company.com"></div>
+      <div class="jf-field"><label for="jfMsg">전하실 말씀 (선택)</label><textarea id="jfMsg" name="msg" placeholder="주요 활동 지역과 자산유형, 관심 있는 기능 등을 자유롭게 남겨 주세요."></textarea></div>
+      <button class="jf-submit" type="submit">가입 신청하기</button>
+      <p class="jf-note">버튼을 누르면 작성하신 내용으로 메일 작성 화면이 열립니다.<br>정식 오픈 전까지는 이메일로 신청을 받고 있습니다.</p>
+    </form>
+  </div>
+</section>
+
+<section class="sec sec-navy" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Next</span>
+      <h2>신청 후 진행 순서</h2>
+    </div>
+    <div class="stage">
+      <div class="now rv"><h4>가입 신청 · 확인</h4><p>신청 내용을 확인하고 순서대로 초대 메일을 보내 드립니다.</p></div>
+      <div class="rv"><h4>초대 · 프로필 검증</h4><p>초대를 받으면 프로필을 만들고 본인, 소속, 프로젝트 검증을 진행합니다. 필요한 증빙은 저희가 안내해 드립니다.</p></div>
+      <div class="rv"><h4>정식 오픈</h4><p>오픈 이벤트가 끝나면 정식 요금과 함께 서비스를 엽니다. 이벤트 기간에 쌓은 검증 기록과 후기는 그대로 이어집니다.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/logo-footer.png" alt="PROPPEER — Real Estate Trust Network" width="440" height="317" loading="lazy">
+        <p>프롭피어는 부동산 일을 하는 사람들의 경력과 거래 경험을 확인할 수 있는 데이터로 만들고, 검증된 사람끼리 연결하는 Real Estate Trust Network입니다.</p>
+      </div>
+      <nav class="foot-menu" aria-label="푸터 메뉴">
+        <a href="index.html">홈</a>
+        <a href="trust.html">신뢰 시스템</a>
+        <a href="connect.html">연결·협업</a>
+        <a href="membership.html">멤버십 · 오픈 이벤트</a>
+        <a href="safety.html">신뢰와 안전</a>
+        <a href="join.html">가입 신청</a>
+      </nav>
+    </div>
+    <div class="foot-legal">
+      <p>프롭피어는 정보의 검증과 연결을 지원하는 플랫폼이며, 거래의 성사나 상대방의 이행을 보증하지 않습니다. 부동산 법정 중개행위는 적법한 개업공인중개사 또는 중개법인을 통해 진행됩니다.</p>
+      <p>프롭피어의 신뢰지표는 금융거래를 위한 신용점수가 아니라, 플랫폼 안에서 확인된 전문활동과 거래행동을 뜻합니다. 이 사이트의 기능·요금·정책은 서비스 준비 단계의 안내로, 정식 오픈 전 법률·개인정보 검토를 거쳐 바뀔 수 있습니다.</p>
+    </div>
+    <div class="foot-copy">
+      <span>© <span id="yy">2026</span> PROPPEER. All rights reserved.</span>
+      <span>VERIFIED PEOPLE, TRUSTED DEALS</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
