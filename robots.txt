@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /diagnosis/result
+
+Sitemap: https://proppeer.co.kr/sitemap.xml

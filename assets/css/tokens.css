@@ -1,0 +1,70 @@
+/* =========================================================
+   PROPPEER · Design Tokens
+   제작기획서 10장(디자인 시스템) / 19.3 디자인 토큰
+   모든 페이지와 컴포넌트는 이 파일의 변수만 참조합니다.
+   ========================================================= */
+
+:root {
+  /* ---- Color : 10.2 컬러 시스템 ---- */
+  --pp-navy: #081b4b;
+  --pp-navy-80: #1a2f60;
+  --pp-navy-60: #445a86;
+  --pp-blue: #165dff;
+  --pp-blue-dark: #0f47c8;
+  --pp-blue-soft: #dbe7ff;
+  --pp-sky: #eaf3ff;
+  --pp-green: #18a66a;
+  --pp-green-soft: #e4f6ee;
+  --pp-gold: #f5a623;
+  --pp-gold-soft: #fdf1dc;
+  --pp-red: #d94a4a;
+  --pp-red-soft: #fbeaea;
+
+  --pp-bg: #f6f9fd;
+  --pp-surface: #ffffff;
+  --pp-surface-2: #f9fbfe;
+  --pp-text: #1d2a3a;
+  --pp-text-2: #4a5a70;
+  --pp-text-3: #606f86;
+  --pp-line: #d8e2f0;
+  --pp-line-soft: #e9eff8;
+
+  /* ---- Type : 10.3 타이포그래피 ---- */
+  --pp-font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  --pp-font-num: "Pretendard Variable", Pretendard, ui-monospace, "SF Mono", monospace;
+
+  --pp-fs-display: clamp(2rem, 1.25rem + 3.4vw, 3.5rem); /* 32 → 56 */
+  --pp-fs-h1: clamp(1.75rem, 1.3rem + 1.9vw, 2.5rem); /* 28 → 40 */
+  --pp-fs-h2: clamp(1.375rem, 1.15rem + 0.9vw, 1.75rem); /* 22 → 28 */
+  --pp-fs-h3: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem); /* 17 → 20 */
+  --pp-fs-body: 1rem; /* 16 */
+  --pp-fs-sm: 0.9375rem; /* 15 */
+  --pp-fs-caption: 0.8125rem; /* 13 */
+
+  --pp-lh-tight: 1.28;
+  --pp-lh-base: 1.68;
+
+  /* ---- Layout : 10.4 레이아웃 ---- */
+  --pp-maxw: 1240px;
+  --pp-maxw-narrow: 880px;
+  --pp-gutter: clamp(20px, 4vw, 40px);
+  --pp-section-y: clamp(64px, 7vw, 120px);
+
+  --pp-radius: 18px;
+  --pp-radius-sm: 12px;
+  --pp-radius-pill: 999px;
+
+  --pp-shadow-sm: 0 1px 2px rgba(8, 27, 75, 0.05);
+  --pp-shadow: 0 6px 24px rgba(8, 27, 75, 0.07);
+  --pp-shadow-lift: 0 14px 40px rgba(8, 27, 75, 0.11);
+
+  --pp-header-h: 68px;
+  --pp-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --pp-header-h: 60px;
+  }
+}

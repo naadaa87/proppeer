@@ -1,252 +1,461 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>프롭피어 PROPPEER — 부동산 신뢰 네트워크</title>
-<meta name="description" content="부동산 사람을 검증하고, 신뢰로 연결하다. 검증된 프로필과 거래증빙 후기, 전문가 연결까지 — 부동산 전문가 신뢰 네트워크 프롭피어.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>부동산 문제, 누구에게 물어봐야 할지부터 | 프롭피어</title>
+<meta name="description" content="공실·임대차·매입·용도변경·공사비 문제를 3분 진단으로 정리하고, 검증된 전문가와 해결 과정까지 연결합니다. 무료 진단으로 지금 확인할 것과 준비할 자료를 받아보세요.">
+<link rel="canonical" href="https://proppeer.co.kr/">
+<meta name="theme-color" content="#165DFF">
 <meta property="og:type" content="website">
-<meta property="og:title" content="프롭피어 PROPPEER — 부동산 신뢰 네트워크">
-<meta property="og:description" content="부동산 사람을 검증하고, 신뢰로 연결하다. 검증된 프로필과 거래증빙 후기, 전문가 연결까지 — 부동산 전문가 신뢰 네트워크 프롭피어.">
-<meta property="og:image" content="assets/og.jpg">
-<meta name="theme-color" content="#0D1B2A">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:site_name" content="프롭피어">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="부동산 문제, 누구에게 물어봐야 할지부터 | 프롭피어">
+<meta property="og:description" content="공실·임대차·매입·용도변경·공사비 문제를 3분 진단으로 정리하고, 검증된 전문가와 해결 과정까지 연결합니다. 무료 진단으로 지금 확인할 것과 준비할 자료를 받아보세요.">
+<meta property="og:url" content="https://proppeer.co.kr/">
+<meta property="og:image" content="https://proppeer.co.kr/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css">
-<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"프롭피어","alternateName":"PropPeer","url":"https://proppeer.co.kr","description":"부동산 문제를 진단하고 검증된 전문가와 해결 과정을 연결하는 부동산 문제 해결 플랫폼","areaServed":"KR"}</script>
 </head>
 <body>
-<div class="topbar"><b>오픈 이벤트</b> · 9월 30일까지 모든 멤버십을 무료로 등록할 수 있습니다 <a href="membership.html">자세히 보기</a></div>
-<header class="nav" id="nav">
-  <div class="nav-in">
-    <a class="nav-logo" href="index.html" aria-label="프롭피어 홈"><img src="assets/logo-nav.png" alt="PROPPEER" width="520" height="69"></a>
-    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-label="메뉴 열기" aria-controls="navLinks"><span></span><span></span><span></span></button>
-    <nav class="nav-links" id="navLinks" aria-label="주 메뉴">
-      <a href="trust.html">신뢰 시스템</a>
-      <a href="connect.html">연결·협업</a>
-      <a href="membership.html">멤버십</a>
-      <a href="safety.html">신뢰와 안전</a>
-      <a class="nav-cta" href="join.html">무료로 시작하기</a>
+<a class="pp-skip" href="#main">본문으로 건너뛰기</a>
+<header class="hd">
+  <div class="wrap hd__in">
+    <a class="logo" href="/" aria-label="프롭피어 홈">
+      <span class="logo__mark" aria-hidden="true">P</span>
+      <span class="logo__text"><span class="logo__ko">프롭피어</span><span class="logo__en">PROPPEER</span></span>
+    </a>
+    <nav class="gnb" aria-label="주요 메뉴">
+        <a href="/diagnosis">문제 해결</a>
+        <a href="/service">서비스 소개</a>
+        <a href="/trust">검증 기준</a>
+        <a href="/cases">해결사례</a>
     </nav>
+    <div class="hd__side">
+      <a class="hd__pro" href="/pro">전문가센터</a>
+      <a class="btn btn--primary btn--sm" href="/diagnosis" data-track="cta_header">내 문제 진단하기</a>
+      <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="pp-drawer" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
-</header>
-<main>
-
-<!-- hero -->
+  <div class="drawer" id="pp-drawer" data-drawer data-open="false">
+      <a href="/diagnosis">문제 해결</a>
+      <a href="/service">서비스 소개</a>
+      <a href="/trust">검증 기준</a>
+      <a href="/cases">해결사례</a>
+      <a href="/pro">전문가센터</a>
+      <a class="btn btn--primary btn--block" href="/diagnosis" data-track="cta_drawer">내 문제 진단하기</a>
+  </div>
+</header><main id="main">
 <section class="hero">
-  <div class="hero-in">
+  <div class="wrap hero__in">
     <div>
-      <span class="eyebrow">Real Estate Trust Network</span>
-      <h1>부동산 사람을<br><em>검증</em>하고,<br>신뢰로 연결하다</h1>
-      <p class="hero-lead">프롭피어는 부동산 일을 하는 사람의 경력과 거래 이력을 확인하고, 검증된 사람끼리 연결하는 전문가 네트워크입니다. 좋은 파트너를 찾느라 쓰는 시간과, 잘못된 상대를 만나 치르는 비용을 줄입니다.</p>
-      <div class="hero-event"><b>OPEN EVENT</b> 9월 30일까지 멤버십 무료 등록</div>
-      <div class="btn-row">
-        <a class="btn btn-gold" href="join.html">무료로 시작하기</a>
-        <a class="btn btn-line" href="trust.html">신뢰 시스템 보기</a>
+      <span class="eyebrow">부동산 문제 해결 플랫폼</span>
+      <h1 class="hero__title">부동산 문제,<br><em>누구에게 물어봐야 할지</em>부터 해결합니다.</h1>
+      <p class="hero__sub">상황을 알려주시면 지금 확인해야 할 쟁점, 준비할 자료, 필요한 전문가와 진행 순서를 먼저 정리해 드립니다. 전문가 이름을 몰라도 괜찮습니다.</p>
+      <ul class="hero__trust">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 자격·소속·실제 프로젝트를 확인한 전문가</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 상담 전 이해관계 공개</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 상담 후 결과서 제공</li>
+      </ul>
+      <p class="hero__note">진단은 무료이며 가입 없이 진행됩니다. 결과는 상담 준비를 돕기 위한 정리이며, 법률·세무·감정 판단을 확정하지 않습니다.</p>
+    </div>
+    
+<div class="picker reveal">
+  <div class="picker__head">
+    <p class="picker__q">어떤 상황인가요?</p>
+    <span class="picker__step num">1 / 9</span>
+  </div>
+  <div class="picker__list">
+    <a class="pick" href="/diagnosis?p=vacancy" data-track="problem_card_vacancy">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9h16v11H4z"/><path d="M9 20v-6h6v6"/></svg></span>
+      <span><span class="pick__label">공실을 활용하고 싶어요</span><span class="pick__desc">임대·운영·개발 중 가능한 방식을 검토합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="pick" href="/diagnosis?p=purchase" data-track="problem_card_purchase">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h2l2.2 10.2a2 2 0 002 1.6h7.1a2 2 0 002-1.5L21 8H7"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span>
+      <span><span class="pick__label">부동산 매입을 검토 중이에요</span><span class="pick__desc">가격·권리·수익성·세금을 함께 확인합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="pick" href="/diagnosis?p=lease" data-track="problem_card_lease">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></span>
+      <span><span class="pick__label">상가 임대차 문제가 있어요</span><span class="pick__desc">계약·갱신·원상복구·명도 쟁점을 정리합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="pick" href="/diagnosis?p=usage" data-track="problem_card_usage">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></span>
+      <span><span class="pick__label">용도변경이 가능한지 궁금해요</span><span class="pick__desc">건축·소방·주차 요건의 확인순서를 안내합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="pick" href="/diagnosis?p=cost" data-track="problem_card_cost">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4a5 5 0 00-5 6L4 16v4h4l6-6a5 5 0 006-6l-3 3-3-1-1-3z"/></svg></span>
+      <span><span class="pick__label">공사비와 견적을 확인하고 싶어요</span><span class="pick__desc">빠진 항목과 범위의 적정성을 검토합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="pick" href="/diagnosis?p=tax" data-track="problem_card_tax">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6.5" rx="7" ry="3"/><path d="M5 6.5v11c0 1.7 3.1 3 7 3s7-1.3 7-3v-11"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></span>
+      <span><span class="pick__label">세금과 계약을 검토하고 싶어요</span><span class="pick__desc">자격자 검토가 필요한 쟁점을 분류합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="pick" href="/diagnosis?p=team" data-track="problem_card_team">
+      <span class="pick__ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5S15 16.7 15 20"/><path d="M16 5.2a3.2 3.2 0 010 5.9M18 14.8c2 .8 3 2.6 3 5.2"/></svg></span>
+      <span><span class="pick__label">여러 전문가가 필요해요</span><span class="pick__desc">복합 문제에 맞는 전문가팀을 구성합니다</span></span>
+      <span class="pick__arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </div>
+  <div class="picker__foot">
+    <span>질문 9개 · 약 3분 · 무료</span>
+    <span>가입 없이 진행됩니다</span>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">왜 어려운가</span>
+      <h2 class="sec-title">부동산 문제가 어려운 건<br>정보가 없어서가 아니라, 끊겨 있어서입니다.</h2>
+      <p class="sec-desc">묻는 곳, 고르는 기준, 판단의 근거, 실행의 책임이 각각 따로 놉니다. 프롭피어는 이 네 지점을 하나의 흐름으로 잇습니다.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card reveal">
+        <span class="card__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+        <h3 class="card__t">누구에게 물어볼지 모른다</h3>
+        <p class="card__d">법률인지 세무인지 건축인지 구분하는 것부터가 일입니다. 진단이 문제 유형과 담당 분야, 순서를 먼저 정리합니다.</p>
       </div>
-      <div class="hero-tags">
-        <span>실명 · 검증 기반</span>
-        <span>거래증빙 후기</span>
-        <span>당사자 반론권 보장</span>
+      <div class="card reveal">
+        <span class="card__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3 class="card__t">실력을 확인할 방법이 없다</h3>
+        <p class="card__d">자격증과 경력 연수로는 알 수 없습니다. 실제 프로젝트에서 맡은 역할과 그 증빙을 확인해 공개합니다.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+        <h3 class="card__t">조언인지 영업인지 모르겠다</h3>
+        <p class="card__d">상담 이후 중개·설계·시공을 제안할 수 있는지 미리 공개하고, 필요하면 독립 전문가의 재검토를 붙입니다.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card__ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg></span>
+        <h3 class="card__t">상담이 끝나면 다시 원점</h3>
+        <p class="card__d">결과서로 남기고, 실행이 필요하면 일정·문서·견적·책임자를 한 공간에서 관리합니다.</p>
       </div>
     </div>
-    <div>
-      <div class="pcard-wrap rv">
-        <span class="pcard-tag">표시 예시</span>
-        <div class="pcard">
-          <div class="pcard-top">
-            <div class="pcard-avatar">KSH</div>
-            <div>
-              <div class="pcard-name">김서현 <small>개발/시행 PM</small></div>
-              <div class="pcard-role">서울 · 상업시설/복합개발 · 10~100억 구간</div>
-            </div>
-          </div>
-          <div class="pcard-chips">
-            <span class="vchip">V4 · 프로젝트확인</span>
-            <span>✓ 본인</span><span>✓ 소속</span><span>✓ 자격</span><span>✓ 프로젝트</span>
-          </div>
-          <button class="prow on" data-x="v" aria-pressed="true"><span>검증등급</span><strong><span class="gold">V4</span> · 프로젝트확인</strong></button>
-          <button class="prow" data-x="r" aria-pressed="false"><span>거래증빙 후기</span><strong>7건 · 최근 12개월 4건</strong></button>
-          <button class="prow" data-x="d" aria-pressed="false"><span>차원별 평점</span><strong>투명성 4.7 · 이행 4.6 · 대응 4.8</strong></button>
-          <button class="prow" data-x="s" aria-pressed="false"><span>분쟁 상태</span><strong>해결 1건 · 이행 완료</strong></button>
-          <button class="prow prow-member" data-x="m" aria-pressed="false"><span>멤버십</span><strong>Pro — 기능 이용권 · 신뢰도와 무관</strong></button>
-          <p class="pcard-hint">각 항목을 누르면 지표의 의미를 볼 수 있습니다</p>
+  </div>
+</section>
+
+<section class="band band--tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">이용 방법</span>
+      <h2 class="sec-title">입력에서 실행까지, 여섯 단계</h2>
+      <p class="sec-desc">각 단계는 앞 단계의 결과 위에서 진행됩니다. 순서를 지키는 것만으로도 불필요한 비용이 줄어듭니다.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3 class="step__t">내 상황 입력</h3><p class="step__d">주소·문제·목표·보유 자료를 고르면 됩니다. 자유 서술은 최소화했습니다.</p></div>
+      <div class="step reveal"><h3 class="step__t">진단 결과 확인</h3><p class="step__d">쟁점, 확인 전 단정할 수 없는 부분, 준비 자료, 필요한 분야를 정리해 드립니다.</p></div>
+      <div class="step reveal"><h3 class="step__t">전문가 비교</h3><p class="step__d">검증 근거·가격·이해관계를 같은 기준으로 놓고 비교합니다.</p></div>
+      <div class="step reveal"><h3 class="step__t">상담 예약</h3><p class="step__d">전화·영상·방문·문서검토 중 선택합니다. 가격과 환불 조건은 결제 전에 확인합니다.</p></div>
+      <div class="step reveal"><h3 class="step__t">결과서 수령</h3><p class="step__d">확인된 사실과 미확인 사항, 다음 행동을 문서로 받습니다. 설명을 반복할 필요가 없습니다.</p></div>
+      <div class="step reveal"><h3 class="step__t">실행 관리</h3><p class="step__d">복합 문제는 전문가팀을 구성하고 일정·문서·견적·결정을 한 곳에서 관리합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">신뢰의 방식</span>
+      <h2 class="sec-title">점수 하나로 사람을 요약하지 않습니다.<br>근거를 그대로 보여드립니다.</h2>
+      <p class="sec-desc">전문가가 직접 적은 정보와 프롭피어가 증빙을 확인한 정보를 화면에서 구분합니다. 무엇이 확인됐고 무엇이 확인되지 않았는지 이용자가 직접 판단할 수 있어야 한다고 봅니다.</p>
+    </div>
+    <div class="grid grid-2" style="align-items:start">
+      <div class="evi reveal">
+        <div class="evi__hd">
+          <span aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <b>전문가 신뢰카드</b>
+          <span class="evi__tag">화면 구성 예시</span>
+        </div>
+        <div class="evi__row">
+          <span class="evi__state evi__state--ok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 검증 완료</span>
+          <span class="evi__txt"><b>본인·소속 확인</b>재직 증빙과 사업자 정보를 확인했습니다.</span>
+        </div>
+        <div class="evi__row">
+          <span class="evi__state evi__state--ok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 검증 완료</span>
+          <span class="evi__txt"><b>프로젝트 참여 역할</b>계약서·발주 자료로 실제 맡은 역할까지 확인합니다. 회사 실적을 개인 실적으로 자동 귀속하지 않습니다.</span>
+        </div>
+        <div class="evi__row">
+          <span class="evi__state evi__state--wait">검토 중</span>
+          <span class="evi__txt"><b>자격 정보</b>운영팀이 자료를 확인하고 있습니다.</span>
+        </div>
+        <div class="evi__row">
+          <span class="evi__state evi__state--self">자기 기재</span>
+          <span class="evi__txt"><b>추가 경력</b>전문가가 직접 등록한 정보이며 아직 증빙을 확인하지 않았습니다.</span>
+        </div>
+        <p class="evi__foot">검증 상태는 미제출 · 검토 중 · 부분 검증 · 검증 완료 · 갱신 필요 · 정정 검토 · 반려 7단계로 관리하고, 최근 검증일을 함께 표시합니다.</p>
+      </div>
+      <div>
+        <ul class="checks reveal">
+          <li><strong>후기는 관계가 확인된 사람만</strong> 씁니다. 결제된 상담이나 확인된 프로젝트 참여가 있어야 작성 권한이 생깁니다.</li>
+          <li><strong>상담고객·발주자·동료 평가를 합치지 않습니다.</strong> 관계마다 볼 수 있는 면이 다르기 때문에 따로 보여드립니다.</li>
+          <li><strong>불리한 후기를 임의로 지우지 않습니다.</strong> 대신 전문가에게 답변권과 정정 요청권을 드립니다.</li>
+          <li><strong>광고는 광고라고 표시합니다.</strong> 유료 노출은 추천 순위와 섞지 않습니다.</li>
+          <li><strong>이해관계를 상담 전에 공개합니다.</strong> 상담 후 중개·설계·시공을 제안할 수 있는지 카드에서 미리 보여드립니다.</li>
+        </ul>
+        <p style="margin-top:22px"><a class="textlink" href="/trust">검증 기준 전체 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">상담 상품</span>
+      <h2 class="sec-title">시간이 아니라 결과물을 삽니다</h2>
+      <p class="sec-desc">모든 상담은 가격·시간·포함·제외·결과물·환불 기준을 같은 규격으로 표시합니다. 추가 비용이 생길 여지를 결제 전에 없애기 위해서입니다.</p>
+    </div>
+    <div class="grid grid-4">
+  <div class="prod reveal">
+    <div class="prod__top">
+      <p class="prod__name">15분 빠른 상담</p>
+      <p class="prod__price num">29,000~59,000원 <small>출시 시점 기준</small></p>
+    </div>
+    <div class="prod__body">
+      <div class="prod__row"><span class="prod__k">포함</span><span class="prod__v">쟁점 정리, 다음 단계 안내</span></div>
+      <div class="prod__row"><span class="prod__k">제외</span><span class="prod__v">문서 정밀검토, 의견서 작성</span></div>
+      <div class="prod__row"><span class="prod__k">결과물</span><span class="prod__v">상담 요약</span></div>
+      <div class="prod__row"><span class="prod__k">준비물</span><span class="prod__v">없어도 진행 가능</span></div>
+    </div>
+  </div>
+  <div class="prod reveal">
+    <div class="prod__top">
+      <p class="prod__name">30분 심층 상담</p>
+      <p class="prod__price num">79,000~149,000원 <small>출시 시점 기준</small></p>
+    </div>
+    <div class="prod__body">
+      <div class="prod__row"><span class="prod__k">포함</span><span class="prod__v">자료 검토, 쟁점별 확인 순서</span></div>
+      <div class="prod__row"><span class="prod__k">제외</span><span class="prod__v">감정평가, 법률의견서, 설계</span></div>
+      <div class="prod__row"><span class="prod__k">결과물</span><span class="prod__v">상담결과서</span></div>
+      <div class="prod__row"><span class="prod__k">준비물</span><span class="prod__v">계약서·도면 등 보유 자료</span></div>
+    </div>
+  </div>
+  <div class="prod reveal">
+    <div class="prod__top">
+      <p class="prod__name">문서 검토</p>
+      <p class="prod__price num">99,000원~ <small>출시 시점 기준</small></p>
+    </div>
+    <div class="prod__body">
+      <div class="prod__row"><span class="prod__k">포함</span><span class="prod__v">계약서·견적서·대장 검토 1건</span></div>
+      <div class="prod__row"><span class="prod__k">제외</span><span class="prod__v">현장 확인, 실측</span></div>
+      <div class="prod__row"><span class="prod__k">결과물</span><span class="prod__v">검토 의견 결과서</span></div>
+      <div class="prod__row"><span class="prod__k">준비물</span><span class="prod__v">검토 대상 문서</span></div>
+    </div>
+  </div>
+  <div class="prod reveal">
+    <div class="prod__top">
+      <p class="prod__name">세컨드 오피니언 · 현장진단</p>
+      <p class="prod__price num">250,000원~ <small>출시 시점 기준</small></p>
+    </div>
+    <div class="prod__body">
+      <div class="prod__row"><span class="prod__k">포함</span><span class="prod__v">독립 전문가 재검토 또는 현장 방문</span></div>
+      <div class="prod__row"><span class="prod__k">제외</span><span class="prod__v">인허가 대행, 시공</span></div>
+      <div class="prod__row"><span class="prod__k">결과물</span><span class="prod__v">비교 결과서</span></div>
+      <div class="prod__row"><span class="prod__k">준비물</span><span class="prod__v">1차 상담 결과와 자료</span></div>
+    </div>
+  </div>
+</div>
+    <div class="note reveal" style="margin-top:26px">
+      <div class="note__t">가격 표기에 대해</div>
+      <p>위 금액은 정식 오픈 시점의 기준가이며, 전문가별 상담상품에 따라 범위 안에서 달라집니다. 상담 예약과 결제는 <span data-ops="launchLabel">2026년 하반기 정식 오픈 예정</span>입니다. 지금은 무료 진단과 사전 접수만 운영합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--navy">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">복합 문제</span>
+      <h2 class="sec-title">한 명으로 끝나지 않는 문제는<br>팀으로 풉니다</h2>
+      <p class="sec-desc">개발·건축·법률·세무·금융·시공·운영이 얽힌 일은 상담 한 번으로 끝나지 않습니다. 역할과 책임자를 정하고, 결정과 기록을 한 공간에 남깁니다.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)">
+        <h3 class="card__t" style="color:#fff">전문가팀 구성</h3>
+        <p class="card__d" style="color:#c3d3ee">필요한 역할을 나누고, 중복과 공백을 표시합니다. 제안·일정·비용을 나란히 비교해 팀을 확정합니다.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)">
+        <h3 class="card__t" style="color:#fff">프로젝트룸</h3>
+        <p class="card__d" style="color:#c3d3ee">업무·문서·일정·견적·의사결정을 탭으로 나눠 관리합니다. 중요한 결정은 대화가 아니라 기록으로 남습니다.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)">
+        <h3 class="card__t" style="color:#fff">완료 확인과 실적</h3>
+        <p class="card__d" style="color:#c3d3ee">산출물을 확인하고 완료를 확정하면, 참여 역할과 평가가 전문가의 검증 실적으로 쌓입니다.</p>
+      </div>
+    </div>
+    <div class="btn-row" style="margin-top:32px">
+      <a class="btn btn--primary" href="/diagnosis?p=team" data-track="cta_project">전문가팀이 필요한 상황인지 진단하기</a>
+      <a class="btn btn--onnavy" href="/service">서비스 전체 흐름 보기</a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">해결사례</span>
+      <h2 class="sec-title">비슷한 문제를 먼저 겪은 기록</h2>
+      <p class="sec-desc">실제 상담과 프로젝트에서 반복적으로 나온 확인 순서를 정리했습니다. 개인정보와 주소·금액은 비식별화합니다.</p>
+    </div>
+    <div class="grid grid-3">
+  <a class="card reveal" href="/cases/vacancy-to-lodging">
+    <div class="case">
+      <span class="case__k">공실 활용 · 용도변경</span>
+      <h3 class="case__t">공실 상가를 숙박시설로 바꿀 때 먼저 확인할 6가지</h3>
+      <p class="case__d">업종부터 정하고 공사를 시작했다가 되돌린 사례가 많습니다. 순서를 바꾸면 비용이 줄어듭니다.</p>
+      <p class="case__m">건축·인허가 / 공실개발</p>
+    </div>
+  </a>
+  <a class="card reveal" href="/cases/restoration-scope">
+    <div class="case">
+      <span class="case__k">임대차 · 원상복구</span>
+      <h3 class="case__t">임대인이 원상복구를 과도하게 요구할 때 확인할 기준</h3>
+      <p class="case__d">복구 범위는 대부분 계약서 특약과 입주 당시 상태에서 갈립니다. 확인 순서를 정리했습니다.</p>
+      <p class="case__m">부동산 법률 / 시공 검토</p>
+    </div>
+  </a>
+  <a class="card reveal" href="/cases/pre-purchase-review">
+    <div class="case">
+      <span class="case__k">매입 검토 · 세컨드 오피니언</span>
+      <h3 class="case__t">상업용 건물 매입 전, 잔금 치르기 앞에 확인할 것</h3>
+      <p class="case__d">권리관계와 임대수익의 사실 여부는 서류로 확인됩니다. 확인 전에는 아무것도 확정할 수 없습니다.</p>
+      <p class="case__m">중개·시장검토 / 법률 / 세무</p>
+    </div>
+  </a>
+</div>
+    <p style="margin-top:26px"><a class="textlink" href="/cases">해결사례 전체 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="band band--tint">
+  <div class="wrap">
+    <div class="grid grid-2" style="align-items:center">
+      <div>
+        <span class="eyebrow">전문가 모집</span>
+        <h2 class="sec-title">경력이 아니라,<br>검증된 실적으로 평가받으세요.</h2>
+        <p class="sec-desc">지금은 정식 오픈 전, 다섯 개 문제 영역에 대응할 <b><span data-ops="partnerTarget">33</span>명 규모</b>의 초기 전문가를 모으고 있습니다. 검증 심사는 <span data-ops="verifySla">영업일 기준 2일</span> 안에 진행합니다.</p>
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn btn--primary" href="/pro" data-track="cta_pro">전문가로 등록 신청하기</a>
+          <a class="btn btn--ghost" href="/trust">검증 기준 먼저 보기</a>
         </div>
       </div>
-      <div class="pcard-explain rv" aria-live="polite">
-        <h4 id="peTitle">검증등급 V0–V5</h4>
-        <p id="peBody">좋은 사람 순위가 아니라, 정보가 얼마나 깊게 확인되었는지를 뜻합니다. V4는 프로젝트 2건 이상과 역할 증빙까지 확인된 상태이고, 등급마다 근거·검증일·만료일이 함께 기록됩니다.</p>
+      <div class="factline reveal">
+        <span><b>참여 조건</b> 검증자료 제출 · 상담상품 등록 · 결과서 제공 · 응답시간 준수 · 후기 공개 동의 · 이해관계 공개</span>
+        <span><b>모집 분야</b> 공실개발 · 상업용 중개 · 부동산 법률 · 세무 · 건축 인허가 · 감정평가 · 시공 · 금융 PF · 공간운영</span>
+        <span><b>현재 단계</b> 초기 파트너 모집 중 — 회원 수·거래액 등 검증되지 않은 수치는 표기하지 않습니다.</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- problem -->
-<section class="sec sec-ivory">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Why Proppeer</span>
-      <h2>부동산에서 가장 큰 변수는<br>결국 사람입니다</h2>
-      <p class="sec-lead">물건 정보는 어디서든 구할 수 있지만, 사람에 대한 정보는 명함과 소개가 전부인 경우가 많습니다. 일을 시작하기 전에 확인하고 싶은 것들이 있습니다.</p>
+<section class="band">
+  <div class="wrap wrap--narrow">
+    <div class="sec-head">
+      <span class="eyebrow">자주 묻는 질문</span>
+      <h2 class="sec-title">궁금하실 만한 것</h2>
     </div>
-    <div class="q-grid">
-      <div class="q-card rv">
-        <span class="qn">01 · 소속과 이력</span>
-        <h3>지금도 그 회사 사람이 맞나?</h3>
-        <p>명함에 적힌 회사에 아직 재직 중인지, 말한 프로젝트에서 실제로 어떤 역할이었는지는 확인할 방법이 마땅치 않습니다.</p>
-      </div>
-      <div class="q-card rv">
-        <span class="qn">02 · 약속과 이행</span>
-        <h3>약속을 지키는 사람인가?</h3>
-        <p>계약, 정산, 일정 약속을 지키는지는 겪어 본 사람만 압니다. 문제는 그 경험이 어디에도 기록으로 남지 않는다는 점입니다.</p>
-      </div>
-      <div class="q-card rv">
-        <span class="qn">03 · 문제 대응</span>
-        <h3>일이 틀어지면 어떻게 하나?</h3>
-        <p>문제가 생겼을 때의 대응이 그 사람의 진짜 실력인데, 소개로 만나면 좋은 얘기만 전해 듣게 됩니다.</p>
-      </div>
-    </div>
-    <div class="q-answer rv">
-      <p>프롭피어는 이 질문에 소문이 아니라 <b>증빙</b>으로 답합니다. 공식 정보와 거래 기록, 실명 레퍼런스, 그리고 문제가 생겼을 때의 해결 기록까지 한 화면에서 확인합니다.</p>
+    <div class="faq">
+      <details open>
+        <summary>진단은 정말 무료인가요?</summary>
+        <p>네. 가입 없이 진행되고 비용도 없습니다. 진단 결과에는 지금 확인할 쟁점, 준비할 자료, 필요한 전문 분야와 순서가 담깁니다. 유료는 그 다음 단계인 전문가 상담부터입니다.</p>
+      </details>
+      <details>
+        <summary>AI가 판단해 주는 건가요?</summary>
+        <p>아닙니다. 입력 내용을 정리하고 확인할 항목을 구조화하는 데까지만 사용합니다. 용도변경 가능 여부, 세액, 법적 결론처럼 자격자의 판단이 필요한 부분은 결과에 담지 않고 "확인 전에는 단정할 수 없는 부분"으로 따로 표시합니다.</p>
+      </details>
+      <details>
+        <summary>전문가는 어떻게 검증하나요?</summary>
+        <p>본인·소속·자격은 증빙 서류로, 프로젝트는 계약·발주·재직 자료로 확인합니다. 회사 실적을 개인 실적으로 자동 귀속하지 않고 실제 맡은 역할까지 봅니다. 초기에는 운영팀이 모든 자료를 직접 심사하며, 확인되지 않은 정보는 화면에서 "자기 기재"로 구분해 표시합니다.</p>
+      </details>
+      <details>
+        <summary>상담을 받으면 중개나 공사를 권유받게 되나요?</summary>
+        <p>그럴 수 있고, 그래서 미리 공개합니다. 상담 이후 중개·설계·시공·운영을 제안할 수 있는 전문가는 카드와 프로필에 이해관계를 표시합니다. 이해관계 없는 의견이 필요하면 독립 전문가의 세컨드 오피니언을 별도로 받을 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>지금 바로 상담을 받을 수 있나요?</summary>
+        <p>아직은 아닙니다. 검증된 전문가를 분야별로 모으는 단계이며, 상담 예약과 결제는 <span data-ops="launchLabel">2026년 하반기 정식 오픈 예정</span>입니다. 진단을 마치고 연락처를 남겨주시면 담당 분야가 준비되는 대로 순서대로 안내드립니다.</p>
+      </details>
+      <details>
+        <summary>올린 자료는 어떻게 관리되나요?</summary>
+        <p>계약서·등기·견적 같은 민감 문서는 기본 비공개이며 상담·프로젝트 단위로 접근 권한을 나눕니다. 다운로드는 만료되는 링크로만 제공하고 열람 기록을 남깁니다. 목적이 끝나면 보관 기간에 따라 파기합니다.</p>
+      </details>
     </div>
   </div>
 </section>
 
-<!-- two pillars -->
-<section class="sec sec-white">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Core</span>
-      <h2>핵심은 두 가지입니다</h2>
-      <p class="sec-lead">기능을 늘리는 대신, 확실한 두 가지에 집중합니다. 사람에 대한 신뢰도, 그리고 사람과 사람의 연결입니다.</p>
+<section class="band band--navy cta-final">
+  <div class="wrap wrap--narrow">
+    <h2 class="sec-title">지금 상황을 3분만 정리해 보세요.</h2>
+    <p class="sec-desc" style="margin-inline:auto">무엇을 확인해야 하는지 알면, 누구에게 물어야 할지도 정해집니다.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="/diagnosis" data-track="cta_final">내 문제 진단하기</a>
+      <a class="btn btn--onnavy" href="/service">서비스 소개 보기</a>
     </div>
-    <div class="pillars">
-      <div class="pillar rv">
-        <div class="pi"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="p-sub">Trust</span>
-        <h3>사람에 대한 신뢰도</h3>
-        <p>본인부터 소속, 자격, 프로젝트, 거래까지 차례로 확인하고, 실제 거래 상대가 남긴 후기를 차원별 평점으로 보여줍니다. 누구를 어디까지 믿어도 되는지, 근거와 함께 판단할 수 있습니다.</p>
-        <ul>
-          <li>검증등급 V0–V5 — 확인의 깊이를 단계로 표시</li>
-          <li>인증뱃지 — 확인된 사실을 하나씩 기록</li>
-          <li>거래증빙 후기와 차원별 평점</li>
+  </div>
+</section></main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__top">
+      <div>
+        <span class="logo">
+          <span class="logo__mark" aria-hidden="true">P</span>
+          <span class="logo__text"><span class="logo__ko">프롭피어</span><span class="logo__en">PROPPEER</span></span>
+        </span>
+        <p class="ft__desc">부동산 문제를 진단하고, 검증된 전문가와 실제 해결 과정을 연결하는 부동산 문제 해결 플랫폼입니다.</p>
+      </div>
+      <div>
+        <p class="ft__ct">서비스</p>
+        <ul class="ft__list">
+          <li><a href="/diagnosis">문제 진단</a></li>
+          <li><a href="/service">서비스 소개</a></li>
+          <li><a href="/cases">해결사례</a></li>
+          <li><a href="/pro">전문가센터</a></li>
         </ul>
-        <a class="p-link" href="trust.html">신뢰 시스템 자세히 보기</a>
       </div>
-      <div class="pillar rv">
-        <div class="pi"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3.2"/><circle cx="16.5" cy="15.5" r="3.2"/><path d="M10.4 10.3l3.8 3"/></svg></div>
-        <span class="p-sub">Connect</span>
-        <h3>사람과 사람의 연결</h3>
-        <p>역할, 지역, 자산유형으로 조건에 맞는 전문가를 찾고, 딜과 프로젝트에 검증된 사람끼리 참여합니다. 소개에만 기대지 않고도 지금 필요한 사람에게 닿을 수 있습니다.</p>
-        <ul>
-          <li>전문가 검색 — 조건으로 찾고 근거를 보고 연결</li>
-          <li>딜·프로젝트 보드 — 권한이 확인된 제안만</li>
-          <li>레퍼런스 요청과 1:1 연결, 실명 커뮤니티</li>
+      <div>
+        <p class="ft__ct">신뢰</p>
+        <ul class="ft__list">
+          <li><a href="/trust">검증 기준</a></li>
+          <li><a href="/trust#review">후기 정책</a></li>
+          <li><a href="/trust#interest">이해관계 표시</a></li>
+          <li><a href="/trust#privacy">개인정보 처리</a></li>
         </ul>
-        <a class="p-link" href="connect.html">연결·협업 자세히 보기</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- how it works -->
-<section class="sec sec-navy">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">How It Works</span>
-      <h2>이렇게 씁니다</h2>
-      <p class="sec-lead">가입부터 거래 이후까지, 흐름은 세 단계입니다.</p>
-    </div>
-    <div class="hw">
-      <div class="hw-step rv">
-        <h3>프로필을 검증합니다</h3>
-        <p>본인인증에서 시작해 소속, 자격, 프로젝트 순서로 확인 범위를 넓혀 갑니다. 등급마다 근거와 검증일이 남습니다.</p>
-      </div>
-      <div class="hw-step rv">
-        <h3>필요한 사람을 찾습니다</h3>
-        <p>역할군과 지역, 자산유형으로 검색합니다. 프로필의 검증 상태와 후기를 확인한 뒤 연결을 요청하거나 딜에 참여합니다.</p>
-      </div>
-      <div class="hw-step rv">
-        <h3>거래 후 서로 기록합니다</h3>
-        <p>거래가 끝나면 증빙과 함께 상호 후기를 남깁니다. 이 기록이 다음 거래에서 서로의 신뢰가 됩니다.</p>
-      </div>
-    </div>
-    <div class="hw-loop rv">
-      거래할수록 검증된 기록이 쌓이고, 기록이 쌓일수록 다음 연결이 쉬워집니다. <b>프롭피어가 만들려는 선순환</b>입니다.
-    </div>
-  </div>
-</section>
-
-<!-- principles -->
-<section class="sec sec-ivory">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Principles</span>
-      <h2>프롭피어가 지키는 세 가지</h2>
-    </div>
-    <div class="pr3 rv">
-      <div>
-        <h3>결제와 신뢰의 분리</h3>
-        <p>돈으로 검증등급, 평점, 후기를 바꿀 수 없습니다. 멤버십은 기능 이용권일 뿐, 신뢰의 등급이 아닙니다.</p>
       </div>
       <div>
-        <h3>당사자 반론권</h3>
-        <p>부정적 기록에는 당사자의 소명과 해결 경과를 나란히 싣습니다. 확정되지 않은 일을 단정하지 않습니다.</p>
-      </div>
-      <div>
-        <h3>데이터 부족은 낙인이 아님</h3>
-        <p>후기가 3건 미만이면 평균 대신 '데이터 형성 중'으로 표시합니다. 신규 회원이 불리해지지 않게 설계했습니다.</p>
-      </div>
-    </div>
-    <p class="foot-note rv">부정적 정보를 다루는 절차와 표현 원칙은 <a href="safety.html" style="color:var(--gold-deep);border-bottom:1px solid var(--gold-deep)">신뢰와 안전</a> 페이지에 정리해 두었습니다.</p>
-  </div>
-</section>
-
-<!-- event band -->
-<section class="sec sec-white">
-  <div class="wrap">
-    <div class="event-band rv">
-      <span class="eyebrow">Open Event · ~9. 30.</span>
-      <h2>지금 가입하면<br>모든 멤버십이 무료입니다</h2>
-      <p>정식 오픈을 준비하며 첫 회원을 모십니다. 9월 30일까지 등록하면 이벤트 기간 동안 Pro와 Company 기능을 비용 없이 쓸 수 있습니다. 결제 정보는 받지 않습니다.</p>
-      <div class="btn-row">
-        <a class="btn btn-gold" href="join.html">무료로 시작하기</a>
-        <a class="btn btn-line" href="membership.html">멤버십 안내 보기</a>
+        <p class="ft__ct">문의</p>
+        <ul class="ft__list">
+          <li><a href="#" data-email data-email-text>이메일</a></li>
+          <li><a href="#" data-tel>전화</a></li>
+          <li><a href="/pro">전문가 등록 문의</a></li>
+          <li><a href="#" data-app="ios">iOS 앱</a></li>
+          <li><a href="#" data-app="android">Android 앱</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
-</main>
-<footer class="footer">
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-brand">
-        <img src="assets/logo-footer.png" alt="PROPPEER — Real Estate Trust Network" width="440" height="317" loading="lazy">
-        <p>프롭피어는 부동산 일을 하는 사람들의 경력과 거래 경험을 확인할 수 있는 데이터로 만들고, 검증된 사람끼리 연결하는 Real Estate Trust Network입니다.</p>
-      </div>
-      <nav class="foot-menu" aria-label="푸터 메뉴">
-        <a href="index.html">홈</a>
-        <a href="trust.html">신뢰 시스템</a>
-        <a href="connect.html">연결·협업</a>
-        <a href="membership.html">멤버십 · 오픈 이벤트</a>
-        <a href="safety.html">신뢰와 안전</a>
-        <a href="join.html">가입 신청</a>
-      </nav>
-    </div>
-    <div class="foot-legal">
-      <p>프롭피어는 정보의 검증과 연결을 지원하는 플랫폼이며, 거래의 성사나 상대방의 이행을 보증하지 않습니다. 부동산 법정 중개행위는 적법한 개업공인중개사 또는 중개법인을 통해 진행됩니다.</p>
-      <p>프롭피어의 신뢰지표는 금융거래를 위한 신용점수가 아니라, 플랫폼 안에서 확인된 전문활동과 거래행동을 뜻합니다. 이 사이트의 기능·요금·정책은 서비스 준비 단계의 안내로, 정식 오픈 전 법률·개인정보 검토를 거쳐 바뀔 수 있습니다.</p>
-    </div>
-    <div class="foot-copy">
-      <span>© <span id="yy">2026</span> PROPPEER. All rights reserved.</span>
-      <span>VERIFIED PEOPLE, TRUSTED DEALS</span>
+    <div class="ft__bottom">
+      <p class="ft__legal">프롭피어는 이용자와 전문가를 연결하는 정보·예약·관리 플랫폼입니다. 법률·세무·중개 등 자격이 필요한 업무의 계약은 이용자와 해당 전문가 사이에 직접 체결되며, 프롭피어는 그 계약의 당사자가 아닙니다. 진단 결과와 AI 정리 기능은 상담 준비를 돕기 위한 것으로 확정적인 법률·세무·감정 판단을 제공하지 않습니다.</p>
+      <p>© <span data-year>2026</span> PropPeer. All rights reserved.</p>
     </div>
   </div>
 </footer>
-<script src="main.js"></script>
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/main.js"></script>
+
 </body>
 </html>

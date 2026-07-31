@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="프롭피어">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2F7BFF"/>
+      <stop offset="55%" stop-color="#165DFF"/>
+      <stop offset="100%" stop-color="#0B3FBE"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <path d="M22 46V18h13.4c6.2 0 10.6 4 10.6 9.8 0 5.9-4.4 9.9-10.6 9.9H29.5V46zm7.5-14.4h5.1c2.6 0 4.3-1.5 4.3-3.8s-1.7-3.8-4.3-3.8h-5.1z" fill="#fff"/>
+</svg>

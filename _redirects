@@ -1,0 +1,27 @@
+# Cloudflare Pages 리다이렉트
+# 주의: Pages 가 .html 확장자를 자동으로 정리하므로
+#       규칙은 반드시 확장자 없는 경로로만 작성합니다. (제작지시서 20.3)
+
+# 자주 입력되는 별칭
+/home            /              301
+/index           /              301
+/join            /pro           301
+/signup          /pro           301
+/expert          /pro           301
+/experts         /pro           302
+/consultations   /service       302
+/projects        /service       302
+/workspace       /service       302
+/insight         /cases         301
+/insights        /cases         301
+/case            /cases         301
+/faq             /#faq          301
+/privacy         /trust         301
+/policy          /trust         301
+
+# 진단 진입 별칭
+/start           /diagnosis     301
+/check           /diagnosis     301
+
+# 정식 오픈 전 미구현 영역
+/admin           /404           302

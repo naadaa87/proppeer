@@ -1,198 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>신뢰 시스템 — 프롭피어 PROPPEER</title>
-<meta name="description" content="검증등급 V0–V5, 인증뱃지, 거래증빙 후기와 차원별 평점. 프롭피어가 사람에 대한 신뢰도를 기록하는 방식입니다.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>검증 기준과 신뢰 정책 | 프롭피어</title>
+<meta name="description" content="프롭피어가 전문가를 어떻게 검증하는지, 후기와 이해관계를 어떻게 표시하는지, 자료를 어떻게 보관하는지 공개합니다.">
+<link rel="canonical" href="https://proppeer.co.kr/trust">
+<meta name="theme-color" content="#165DFF">
 <meta property="og:type" content="website">
-<meta property="og:title" content="신뢰 시스템 — 프롭피어 PROPPEER">
-<meta property="og:description" content="검증등급 V0–V5, 인증뱃지, 거래증빙 후기와 차원별 평점. 프롭피어가 사람에 대한 신뢰도를 기록하는 방식입니다.">
-<meta property="og:image" content="assets/og.jpg">
-<meta name="theme-color" content="#0D1B2A">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:site_name" content="프롭피어">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="검증 기준과 신뢰 정책 | 프롭피어">
+<meta property="og:description" content="프롭피어가 전문가를 어떻게 검증하는지, 후기와 이해관계를 어떻게 표시하는지, 자료를 어떻게 보관하는지 공개합니다.">
+<meta property="og:url" content="https://proppeer.co.kr/trust">
+<meta property="og:image" content="https://proppeer.co.kr/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css">
-<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+
 </head>
 <body>
-<div class="topbar"><b>오픈 이벤트</b> · 9월 30일까지 모든 멤버십을 무료로 등록할 수 있습니다 <a href="membership.html">자세히 보기</a></div>
-<header class="nav" id="nav">
-  <div class="nav-in">
-    <a class="nav-logo" href="index.html" aria-label="프롭피어 홈"><img src="assets/logo-nav.png" alt="PROPPEER" width="520" height="69"></a>
-    <button class="nav-burger" id="navBurger" aria-expanded="false" aria-label="메뉴 열기" aria-controls="navLinks"><span></span><span></span><span></span></button>
-    <nav class="nav-links" id="navLinks" aria-label="주 메뉴">
-      <a href="trust.html" class="on">신뢰 시스템</a>
-      <a href="connect.html">연결·협업</a>
-      <a href="membership.html">멤버십</a>
-      <a href="safety.html">신뢰와 안전</a>
-      <a class="nav-cta" href="join.html">무료로 시작하기</a>
+<a class="pp-skip" href="#main">본문으로 건너뛰기</a>
+<header class="hd">
+  <div class="wrap hd__in">
+    <a class="logo" href="/" aria-label="프롭피어 홈">
+      <span class="logo__mark" aria-hidden="true">P</span>
+      <span class="logo__text"><span class="logo__ko">프롭피어</span><span class="logo__en">PROPPEER</span></span>
+    </a>
+    <nav class="gnb" aria-label="주요 메뉴">
+        <a href="/diagnosis">문제 해결</a>
+        <a href="/service">서비스 소개</a>
+        <a href="/trust" aria-current="page">검증 기준</a>
+        <a href="/cases">해결사례</a>
     </nav>
+    <div class="hd__side">
+      <a class="hd__pro" href="/pro">전문가센터</a>
+      <a class="btn btn--primary btn--sm" href="/diagnosis" data-track="cta_header">내 문제 진단하기</a>
+      <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="pp-drawer" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
-</header>
-<main>
-
-<section class="phero">
+  <div class="drawer" id="pp-drawer" data-drawer data-open="false">
+      <a href="/diagnosis">문제 해결</a>
+      <a href="/service">서비스 소개</a>
+      <a href="/trust">검증 기준</a>
+      <a href="/cases">해결사례</a>
+      <a href="/pro">전문가센터</a>
+      <a class="btn btn--primary btn--block" href="/diagnosis" data-track="cta_drawer">내 문제 진단하기</a>
+  </div>
+</header><main id="main">
+<section class="pagehead">
   <div class="wrap">
-    <span class="eyebrow">Trust System</span>
-    <h1>신뢰를 하나의 점수로<br>합치지 않습니다</h1>
-    <p>별점 평균 하나로는 사람을 판단할 수 없습니다. 프롭피어는 '얼마나 깊게 확인되었는지'와 '실제 거래에서 어땠는지'를 나누어, 근거와 함께 보여줍니다.</p>
+    <div class="crumb"><a href="/">홈</a> <span>›</span> <span>검증 기준</span></div>
+    <h1 class="pagehead__t">무엇을 확인했고, 무엇을 확인하지 않았는지<br>그대로 밝힙니다</h1>
+    <p class="pagehead__d">신뢰는 점수가 아니라 근거에서 나옵니다. 프롭피어가 어떤 자료로 무엇을 확인하는지, 확인되지 않은 정보는 어떻게 표시하는지 공개합니다.</p>
   </div>
 </section>
 
-<!-- V ladder -->
-<section class="sec sec-ivory" id="verify">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Verification · V0–V5</span>
-      <h2>검증등급은 '확인의 깊이'입니다</h2>
-      <p class="sec-lead">본인에서 시작해 소속, 자격, 프로젝트, 거래로 확인 범위가 넓어지며, 등급은 V0부터 V5까지 여섯 단계입니다. 등급마다 출처와 검증일, 만료일이 기록되고, 재직 변경이나 자격 정지가 확인되면 사전 통지 후 보류되거나 내려갑니다. 아래 단계를 눌러 요건을 확인해 보세요.</p>
+<section class="band">
+  <div class="wrap doc">
+    <h2 id="verify">전문가 검증</h2>
+    <p>전문가가 직접 적은 정보와 프롭피어가 증빙으로 확인한 정보를 분리합니다. 초기에는 자동 심사 없이 운영팀이 모든 자료를 직접 검토합니다.</p>
+    <div class="tbl-scroll">
+      <table class="tbl">
+        <thead><tr><th scope="col">항목</th><th scope="col">확인 자료</th><th scope="col">공개 방식</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">본인 확인</th><td>휴대폰 본인확인</td><td>확인 완료 여부만 표시</td></tr>
+          <tr><th scope="row">소속</th><td>재직 증빙, 사업자등록 정보</td><td>회사명과 확인일 표시</td></tr>
+          <tr><th scope="row">자격</th><td>자격증 원본과 유효기간</td><td>자격명과 확인일 표시, 만료 시 갱신 필요로 전환</td></tr>
+          <tr><th scope="row">프로젝트 실적</th><td>계약서, 발주 자료, 재직 확인서, 발주자 확인</td><td>실제 맡은 역할 단위로 표시. 비공개 요청 시 범주화</td></tr>
+          <tr><th scope="row">참여 관계</th><td>상대방 계정 확인 또는 별도 인증</td><td>발주자·동료·협력사 등 관계 유형 표시</td></tr>
+          <tr><th scope="row">이해관계</th><td>본인 신고와 운영팀 확인</td><td>상담 이후 중개·설계·시공 제안 가능 여부 표시</td></tr>
+        </tbody>
+      </table>
     </div>
-    <div class="v-wrap">
-      <div class="v-steps rv" role="tablist" aria-label="검증등급 단계">
-        <button class="v-step" data-v="0" role="tab" aria-selected="false"><span class="dot"></span><span class="v-code">V0</span><span class="v-name">미소유 · 미확인</span><span class="v-mini">공개 제한</span></button>
-        <button class="v-step" data-v="1" role="tab" aria-selected="false"><span class="dot"></span><span class="v-code">V1</span><span class="v-name">본인확인</span><span class="v-mini">휴대폰 인증</span></button>
-        <button class="v-step" data-v="2" role="tab" aria-selected="false"><span class="dot"></span><span class="v-code">V2</span><span class="v-name">소속확인</span><span class="v-mini">회사 이메일 · 사업자</span></button>
-        <button class="v-step" data-v="3" role="tab" aria-selected="false"><span class="dot"></span><span class="v-code">V3</span><span class="v-name">전문자격확인</span><span class="v-mini">자격 · 등록</span></button>
-        <button class="v-step on" data-v="4" role="tab" aria-selected="true"><span class="dot"></span><span class="v-code">V4</span><span class="v-name">프로젝트확인</span><span class="v-mini">실적 · 역할 증빙</span></button>
-        <button class="v-step" data-v="5" role="tab" aria-selected="false"><span class="dot"></span><span class="v-code">V5</span><span class="v-name">거래검증</span><span class="v-mini">완료 거래 · 상대방 확인</span></button>
+
+    <h3>검증 상태 7단계</h3>
+    <div class="tbl-scroll">
+      <table class="tbl">
+        <thead><tr><th scope="col">상태</th><th scope="col">의미</th><th scope="col">화면 표시</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">미제출</th><td>자료가 등록되지 않음</td><td>미검증 정보</td></tr>
+          <tr><th scope="row">검토 중</th><td>운영팀이 자료를 확인하는 중</td><td>검토 중 배지</td></tr>
+          <tr><th scope="row">부분 검증</th><td>일부 항목만 확인됨</td><td>확인된 항목만 체크 표시</td></tr>
+          <tr><th scope="row">검증 완료</th><td>필수 근거와 관계가 확인됨</td><td>검증 완료 배지와 검증일</td></tr>
+          <tr><th scope="row">갱신 필요</th><td>유효기간이 지났거나 소속이 바뀔 수 있음</td><td>갱신 필요 표시</td></tr>
+          <tr><th scope="row">정정 검토</th><td>당사자나 관계자가 이의를 제기함</td><td>일시적 공개 제한</td></tr>
+          <tr><th scope="row">반려</th><td>근거가 부족하거나 과장·허위가 확인됨</td><td>외부에 공개하지 않음</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <div class="note__t">심사 기간</div>
+      <p>자료 제출 후 <span data-ops="verifySla">영업일 기준 2일</span> 안에 1차 심사 결과를 안내합니다. 발주자·동료 확인이 필요한 실적은 3~5영업일이 더 걸릴 수 있습니다. 소속·자격·활동 상태는 6~12개월마다 다시 점검합니다.</p>
+    </div>
+
+    <h2 id="review">후기와 평판</h2>
+    <ul class="checks">
+      <li><strong>관계가 확인된 사람만 씁니다.</strong> 결제된 상담, 확인된 프로젝트 참여, 또는 플랫폼이 관계를 검증한 경우에만 작성 권한이 생깁니다.</li>
+      <li><strong>관계별로 나눠서 보여드립니다.</strong> 상담고객, 발주자, 동료의 평가를 하나의 점수로 합산하지 않습니다. 각자 볼 수 있는 면이 다르기 때문입니다.</li>
+      <li><strong>사실과 평가를 구분합니다.</strong> 분쟁·징계 같은 민감한 내용은 공개 근거를 확인한 뒤에만 다룹니다.</li>
+      <li><strong>부정적인 후기를 지우지 않습니다.</strong> 대신 전문가에게 답변권과 정정 요청권을 드립니다.</li>
+      <li><strong>신고가 들어와도 바로 삭제하지 않습니다.</strong> 공개 제한 → 자료 보존 → 당사자 소명 → 운영팀 판단 순으로 처리합니다.</li>
+    </ul>
+
+    <h2 id="interest">이해관계와 광고 표시</h2>
+    <p>상담을 한 전문가가 이후 중개·설계·시공·운영 업무를 제안할 수 있다면, 그 사실을 상담 전에 알아야 조언을 제대로 판단할 수 있습니다. 프롭피어는 이 정보를 전문가 카드와 상담상품 화면에 표시합니다.</p>
+    <ul class="checks">
+      <li><strong>유료 노출은 광고로 명시합니다.</strong> 자연 추천 순위와 섞지 않고 영역과 배지를 분리합니다.</li>
+      <li><strong>추천 이유를 함께 표시합니다.</strong> 왜 이 전문가가 추천됐는지, 어떤 검증 정보가 아직 없는지 카드에서 밝힙니다.</li>
+      <li><strong>독점 노출을 막습니다.</strong> 특정 전문가만 반복 노출되지 않도록 비교 선택지를 충분히 제공합니다.</li>
+      <li><strong>플랫폼의 이해관계도 공개합니다.</strong> 제휴나 관계사가 얽힌 추천은 그 사실을 표시합니다.</li>
+    </ul>
+    <div class="note note--gold">
+      <div class="note__t">세컨드 오피니언</div>
+      <p>이해관계 없는 판단이 필요한 결정에는 독립 전문가의 재검토를 붙일 수 있습니다. 재검토 전문가는 해당 건과 이해관계가 없는지 확인한 뒤 배정하며, 1차 전문가에게 자동으로 알리지 않습니다. 공유 여부는 이용자가 정합니다.</p>
+    </div>
+
+    <h2 id="privacy">자료와 개인정보</h2>
+    <ul class="checks">
+      <li><strong>민감 문서는 기본 비공개입니다.</strong> 계약서·등기·자격·견적 자료는 상담과 프로젝트 단위로 접근 권한을 나눕니다.</li>
+      <li><strong>다운로드는 만료되는 링크로만 제공합니다.</strong> 열람과 다운로드 기록을 보관합니다.</li>
+      <li><strong>검증용 원본과 공개용 정보를 분리 보관합니다.</strong> 저장 영역과 접근 권한이 다릅니다.</li>
+      <li><strong>운영자도 기록을 남깁니다.</strong> 민감자료 접근은 목적과 사유, 시간을 로그로 남기고 최소 권한만 부여합니다.</li>
+      <li><strong>목적이 끝나면 파기합니다.</strong> 탈퇴, 상담·프로젝트 종료, 법정 보존기간에 따라 파기와 보관 기준을 구분합니다.</li>
+      <li><strong>AI 처리 범위를 고지합니다.</strong> 어떤 내용이 정리에 사용되는지, 외부 모델을 쓰는지, 학습에 사용하는지 밝힙니다. 동의 없이 민감정보를 외부로 보내지 않습니다.</li>
+    </ul>
+
+    <h2>이 정책에 대해 알려주실 것이 있다면</h2>
+    <p>검증 기준과 후기 정책은 서비스가 커지면서 계속 다듬어야 하는 부분입니다. 기준이 불합리하거나 빠진 부분이 보이면 알려주세요. 변경할 때는 변경 내용과 시점을 이 페이지에 남깁니다.</p>
+    <div class="btn-row" style="margin-top:26px">
+      <a class="btn btn--ghost" href="#" data-email>정책에 대해 의견 보내기</a>
+      <a class="btn btn--primary" href="/diagnosis" data-track="cta_trust">3분 진단 시작하기</a>
+    </div>
+  </div>
+</section></main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__top">
+      <div>
+        <span class="logo">
+          <span class="logo__mark" aria-hidden="true">P</span>
+          <span class="logo__text"><span class="logo__ko">프롭피어</span><span class="logo__en">PROPPEER</span></span>
+        </span>
+        <p class="ft__desc">부동산 문제를 진단하고, 검증된 전문가와 실제 해결 과정을 연결하는 부동산 문제 해결 플랫폼입니다.</p>
       </div>
-      <div class="v-panel rv" id="vPanel" aria-live="polite">
-        <span class="vp-code" id="vpCode">V4</span>
-        <h3 id="vpName">프로젝트확인</h3>
-        <p class="vp-desc" id="vpDesc">프로젝트 2건 이상과 각 프로젝트에서 맡은 역할의 증빙이 확인된 상태입니다. '참여했다'는 말이 아니라 발주처, 수행 기간, 역할, 결과를 기준으로 봅니다.</p>
-        <dl>
-          <div class="vp-row"><dt>필수 요건</dt><dd id="vpReq">프로젝트 2건 이상 + 역할 증빙</dd></div>
-          <div class="vp-row"><dt>화면 표시</dt><dd id="vpShow">실적확인</dd></div>
-          <div class="vp-row"><dt>갱신 주기</dt><dd id="vpCycle">프로젝트별 검증</dd></div>
-        </dl>
-      </div>
-    </div>
-    <div class="callout mt rv">
-      <strong>해석에 주의해 주세요.</strong> V5가 V3보다 '더 좋은 사람'이라는 뜻이 아닙니다. 플랫폼에서 확인된 거래 데이터가 더 많다는 뜻일 뿐입니다. 신규 전문가나 거래 빈도가 낮은 직군이 불리해지지 않도록, 검증등급을 검색의 절대 순위로 쓰지 않습니다.
-    </div>
-  </div>
-</section>
-
-<!-- badges -->
-<section class="sec sec-white" id="badge">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Certified Badges</span>
-      <h2>뱃지는 '확인된 사실'<br>하나하나입니다</h2>
-      <p class="sec-lead">인증뱃지는 추천이 아니라 사실 확인입니다. 어떤 근거로, 언제 확인했고, 언제 만료되는지 뱃지를 눌러 볼 수 있게 만들었습니다.</p>
-    </div>
-    <div class="b-grid">
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"/><path d="M5.5 19.5c1.3-3 3.7-4.5 6.5-4.5s5.2 1.5 6.5 4.5"/></svg></div><span class="bt">Identity</span><h4>본인확인</h4><p>실명 본인인증을 마친 계정입니다. 도용이나 탈퇴 시 즉시 회수됩니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-6h6v6"/></svg></div><span class="bt">Affiliation</span><h4>소속확인</h4><p>현재 회사 재직이 확인된 상태입니다. 퇴사나 미갱신 시 만료됩니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8.5 12l2.3 2.3L15.5 9.5"/></svg></div><span class="bt">Credential</span><h4>자격확인</h4><p>공인중개사 등 전문자격과 등록 상태를 공식 조회로 확인했습니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><rect x="3.5" y="7" width="17" height="13" rx="2.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg></div><span class="bt">Business</span><h4>사업자확인</h4><p>사업자·법인과 대표/관리자 권한을 확인했습니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><path d="M4 19L10 5l4 9 3-5 3 10"/></svg></div><span class="bt">Project</span><h4>프로젝트확인</h4><p>역할, 기간, 결과 증빙이 확인된 실적을 표시합니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><path d="M7 8h10M7 12h10M7 16h6"/><rect x="3.5" y="4" width="17" height="16" rx="2.5"/></svg></div><span class="bt">Transaction</span><h4>거래확인</h4><p>플랫폼 안에서 실제 거래 관계가 확인된 경우 발급됩니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><path d="M12 4l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 9.3l5-.7L12 4z"/></svg></div><span class="bt">Reference</span><h4>레퍼런스확인</h4><p>함께 일한 실명 동료 2인 이상의 레퍼런스를 보유하고 있습니다.</p></div>
-      <div class="b-card rv"><div class="bi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.5l2.3 2.3 4.7-5"/></svg></div><span class="bt">Resolved</span><h4>분쟁해결</h4><p>합의와 이행이 확인된 분쟁 해결 경험을 기록합니다.</p></div>
-    </div>
-    <div class="b-rules">
-      <div class="b-rule rv">검증뱃지는 활동·성취 뱃지와 색과 그룹을 분리해 표시합니다. 사실 확인과 참여 보상을 섞지 않습니다.</div>
-      <div class="b-rule rv">만료 30일 전에 갱신을 알리고, 만료되면 회색 처리합니다. 자격 정지가 확인되면 즉시 상태를 바꿉니다.</div>
-      <div class="b-rule rv">기업이 구매하는 광고·제휴 표시는 '파트너'로 따로 구분합니다. 검증뱃지와 혼동되지 않게 합니다.</div>
-    </div>
-  </div>
-</section>
-
-<!-- review + score -->
-<section class="sec sec-ivory" id="review">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Review &amp; Rating</span>
-      <h2>후기는 실제 거래가<br>확인된 경우에만 씁니다</h2>
-      <p class="sec-lead">익명 후기와 소문, 전해 들은 이야기는 받지 않습니다. 거래관계가 증빙된 당사자만, 한 거래에 한 번 씁니다. 그렇게 모인 기록을 총점 하나가 아니라 차원별로 보여줍니다.</p>
-    </div>
-    <div class="r-flow">
-      <div class="r-step rv"><h4>거래관계 확인</h4><p>계약서, 정산 내역 등으로 실제 거래 당사자인지 먼저 확인합니다.</p></div>
-      <div class="r-step rv"><h4>구조화된 문항</h4><p>역할별 문항에 따라 관찰 가능한 사실 중심으로 작성합니다.</p></div>
-      <div class="r-step rv"><h4>이중블라인드</h4><p>상대가 제출할 때까지, 최대 14일간 서로의 내용을 공개하지 않습니다.</p></div>
-      <div class="r-step rv"><h4>사전통지 · 반론</h4><p>부정적 후기는 공개 전 당사자에게 알리고, 7일간 소명 기회를 드립니다.</p></div>
-      <div class="r-step rv"><h4>공개 · 갱신</h4><p>반론과 해결 경과를 나란히 싣고, 새 결과가 나오면 반영해 갱신합니다.</p></div>
-    </div>
-    <div class="r-cols">
-      <div class="r-box rv">
-        <h3>후기 작성 자격</h3>
-        <ul>
-          <li>본인확인(V1 이상)을 마친 회원만 쓸 수 있습니다.</li>
-          <li>실제 거래관계 증빙이 필요합니다. 단순 문의나 제안 단계는 제외합니다.</li>
-          <li>한 거래에 후기는 한 번입니다. 중요한 후속 결과는 갱신으로 반영합니다.</li>
-          <li>같은 회사, 친척, 투자 관계 등 이해관계는 공개하고 가중치를 낮춥니다.</li>
+      <div>
+        <p class="ft__ct">서비스</p>
+        <ul class="ft__list">
+          <li><a href="/diagnosis">문제 진단</a></li>
+          <li><a href="/service">서비스 소개</a></li>
+          <li><a href="/cases">해결사례</a></li>
+          <li><a href="/pro">전문가센터</a></li>
         </ul>
       </div>
-      <div class="r-box rv">
-        <h3>레퍼런스는 따로 봅니다</h3>
-        <ul>
-          <li>후기가 특정 거래의 기록이라면, 레퍼런스는 함께 일한 사람의 평가입니다.</li>
-          <li>실명 동료 2인 이상이 응답해야 레퍼런스확인 뱃지가 붙습니다.</li>
-          <li>채용, 파트너 선정, 유료 리포트에서 후기와 구분해 활용합니다.</li>
+      <div>
+        <p class="ft__ct">신뢰</p>
+        <ul class="ft__list">
+          <li><a href="/trust">검증 기준</a></li>
+          <li><a href="/trust#review">후기 정책</a></li>
+          <li><a href="/trust#interest">이해관계 표시</a></li>
+          <li><a href="/trust#privacy">개인정보 처리</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft__ct">문의</p>
+        <ul class="ft__list">
+          <li><a href="#" data-email data-email-text>이메일</a></li>
+          <li><a href="#" data-tel>전화</a></li>
+          <li><a href="/pro">전문가 등록 문의</a></li>
+          <li><a href="#" data-app="ios">iOS 앱</a></li>
+          <li><a href="#" data-app="android">Android 앱</a></li>
         </ul>
       </div>
     </div>
-    <div class="score-wrap" style="margin-top:56px">
-      <div class="s-chart rv" id="dimChart">
-        <h3>차원별 평점 — 표시 예시</h3>
-        <p class="sc-sub">거래증빙 후기를 일곱 개 차원으로 나누어 기록합니다. 숫자는 예시입니다.</p>
-        <div class="dim"><div class="dim-top"><b>계약 이행</b><span>4.6</span></div><div class="dim-bar"><i data-w="92"></i></div></div>
-        <div class="dim"><div class="dim-top"><b>전문 역량</b><span>4.5</span></div><div class="dim-bar"><i data-w="90"></i></div></div>
-        <div class="dim"><div class="dim-top"><b>정보 투명성</b><span>4.7</span></div><div class="dim-bar"><i data-w="94"></i></div></div>
-        <div class="dim"><div class="dim-top"><b>정산 신뢰</b><span>4.8</span></div><div class="dim-bar"><i data-w="96"></i></div></div>
-        <div class="dim"><div class="dim-top"><b>문제 대응</b><span>4.8</span></div><div class="dim-bar"><i data-w="96"></i></div></div>
-        <div class="dim"><div class="dim-top"><b>일정 · 응답</b><span>4.4</span></div><div class="dim-bar"><i data-w="88"></i></div></div>
-        <div class="dim" style="margin-bottom:0"><div class="dim-top"><b>재거래 의향</b><span>4.6</span></div><div class="dim-bar"><i data-w="92"></i></div></div>
-      </div>
-      <div class="s-rules">
-        <div class="s-rule rv"><h4>3건 미만은 평균을 공개하지 않습니다</h4><p>표본이 적을 때는 점수 대신 '데이터 형성 중'으로 표시합니다. 데이터가 적다는 사실이 낙인이 되지 않게 하기 위해서입니다.</p></div>
-        <div class="s-rule rv"><h4>총점 단독 노출을 금지합니다</h4><p>평점은 항상 표본 수, 최근성, 분쟁 상태와 함께 보여줍니다. 숫자 하나만 떼어 쓰지 않습니다.</p></div>
-        <div class="s-rule rv"><h4>이상 패턴은 보정합니다</h4><p>같은 회사 집중, 상호 고평점 교환, 단기간 급증 같은 패턴은 가중치를 낮추거나 검수 대상으로 돌립니다.</p></div>
-      </div>
-    </div>
-    <div class="callout mt rv">
-      <strong>결제는 신뢰를 만들지 않습니다.</strong> 부정적 후기 삭제, 점수 복구, 분쟁 우선처리를 유료 상품으로 팔지 않습니다. 멤버십을 해지해도 검증된 사실과 정당한 후기는 그대로 유지됩니다.
-    </div>
-    <div class="sec-cta rv btn-row">
-      <a class="btn btn-gold" href="join.html">내 프로필 검증 시작하기</a>
-      <a class="btn btn-line-d" href="connect.html">연결·협업 기능 보기</a>
-    </div>
-    <p class="foot-note rv">프롭피어의 신뢰지표는 금융 신용을 평가하는 신용점수가 아니라, 플랫폼 안에서 확인된 전문활동과 거래행동을 뜻합니다.</p>
-  </div>
-</section>
-</main>
-<footer class="footer">
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-brand">
-        <img src="assets/logo-footer.png" alt="PROPPEER — Real Estate Trust Network" width="440" height="317" loading="lazy">
-        <p>프롭피어는 부동산 일을 하는 사람들의 경력과 거래 경험을 확인할 수 있는 데이터로 만들고, 검증된 사람끼리 연결하는 Real Estate Trust Network입니다.</p>
-      </div>
-      <nav class="foot-menu" aria-label="푸터 메뉴">
-        <a href="index.html">홈</a>
-        <a href="trust.html">신뢰 시스템</a>
-        <a href="connect.html">연결·협업</a>
-        <a href="membership.html">멤버십 · 오픈 이벤트</a>
-        <a href="safety.html">신뢰와 안전</a>
-        <a href="join.html">가입 신청</a>
-      </nav>
-    </div>
-    <div class="foot-legal">
-      <p>프롭피어는 정보의 검증과 연결을 지원하는 플랫폼이며, 거래의 성사나 상대방의 이행을 보증하지 않습니다. 부동산 법정 중개행위는 적법한 개업공인중개사 또는 중개법인을 통해 진행됩니다.</p>
-      <p>프롭피어의 신뢰지표는 금융거래를 위한 신용점수가 아니라, 플랫폼 안에서 확인된 전문활동과 거래행동을 뜻합니다. 이 사이트의 기능·요금·정책은 서비스 준비 단계의 안내로, 정식 오픈 전 법률·개인정보 검토를 거쳐 바뀔 수 있습니다.</p>
-    </div>
-    <div class="foot-copy">
-      <span>© <span id="yy">2026</span> PROPPEER. All rights reserved.</span>
-      <span>VERIFIED PEOPLE, TRUSTED DEALS</span>
+    <div class="ft__bottom">
+      <p class="ft__legal">프롭피어는 이용자와 전문가를 연결하는 정보·예약·관리 플랫폼입니다. 법률·세무·중개 등 자격이 필요한 업무의 계약은 이용자와 해당 전문가 사이에 직접 체결되며, 프롭피어는 그 계약의 당사자가 아닙니다. 진단 결과와 AI 정리 기능은 상담 준비를 돕기 위한 것으로 확정적인 법률·세무·감정 판단을 제공하지 않습니다.</p>
+      <p>© <span data-year>2026</span> PropPeer. All rights reserved.</p>
     </div>
   </div>
 </footer>
-<script src="main.js"></script>
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/main.js"></script>
+
 </body>
 </html>
