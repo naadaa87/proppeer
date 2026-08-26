@@ -54,6 +54,7 @@
       docs: ["건축물대장", "평면도(또는 현황 도면)", "현재 임대차 조건 요약", "관리비 내역", "현장 사진"],
       product: "deep30",
       productWhy: "활용 가능한 방식을 추리려면 자료를 함께 보며 조건을 확인하는 30분 상담이 적합합니다.",
+      field: "공실개발·공간기획",
       caseSlug: "vacancy-to-lodging"
     },
 
@@ -91,6 +92,7 @@
       product: "second",
       productWhy:
         "이해관계가 없는 독립 전문가의 재검토가 매입 결정에서 가장 효과가 큽니다.",
+      field: "상업용 중개",
       caseSlug: "pre-purchase-review"
     },
 
@@ -128,6 +130,7 @@
       product: "docs",
       productWhy:
         "계약서와 견적서를 먼저 검토하면 쟁점이 정리되어 이후 상담 시간이 짧아집니다.",
+      field: "부동산 법률",
       caseSlug: "restoration-scope"
     },
 
@@ -164,6 +167,7 @@
       docs: ["건축물대장", "건축 도면", "토지이용계획확인원", "현장 사진(내부·주차·진입로)"],
       product: "deep30",
       productWhy: "자료를 함께 보며 확인 순서를 정리하는 데 30분 상담이 적합합니다.",
+      field: "건축·인허가",
       caseSlug: "vacancy-to-lodging"
     },
 
@@ -200,6 +204,7 @@
       docs: ["견적서(항목별)", "도면 또는 현황 실측", "현장 사진", "공사 계약서 초안"],
       product: "docs",
       productWhy: "견적서를 항목 단위로 검토하는 문서검토가 가장 직접적입니다.",
+      field: "시공·인테리어",
       caseSlug: "restoration-scope"
     },
 
@@ -236,6 +241,7 @@
       docs: ["등기부등본", "계약서 또는 초안", "취득 당시 자료", "임대차 현황", "대출 조건"],
       product: "deep30",
       productWhy: "선택지별 차이를 비교하려면 자료를 함께 보는 상담이 필요합니다.",
+      field: "세무",
       caseSlug: "pre-purchase-review"
     },
 
@@ -275,6 +281,7 @@
       product: "second",
       productWhy:
         "복합 의뢰는 운영자 상담으로 역할을 먼저 정리한 뒤 전문가팀을 구성합니다.",
+      field: "금융·PF",
       caseSlug: "vacancy-to-lodging"
     }
   };
@@ -734,7 +741,11 @@
     h +=
       '<div class="res__block"><div class="res__k">지금 하실 수 있는 것</div>' +
       '<div class="btn-row">' +
-      '<button type="button" class="btn btn--primary" data-goform data-track="diagnosis_result_cta">상담 오픈 시 우선 안내받기</button>' +
+      '<a class="btn btn--primary" href="/experts?field=' +
+      encodeURIComponent(P.field || '') +
+      '" data-track="diagnosis_to_experts">이 분야 전문가 보기</a>' +
+      '<a class="btn btn--ghost" href="/qna/ask" data-track="diagnosis_to_qna">무료로 질문하기</a>' +
+      '<button type="button" class="btn btn--ghost" data-goform data-track="diagnosis_result_cta">상담 오픈 시 우선 안내받기</button>' +
       '<button type="button" class="btn btn--ghost" data-copy>결과 복사하기</button>' +
       '<button type="button" class="btn btn--ghost" data-print>인쇄 · PDF 저장</button>' +
       '<a class="btn btn--ghost" href="/cases/' +

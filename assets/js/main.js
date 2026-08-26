@@ -222,7 +222,7 @@
   }
 
   function showMsg(form, type, text) {
-    var box = form.querySelector(".form__msg");
+    var box = form.querySelector(".form__msg[role=status]") || form.querySelector(".form__msg");
     if (!box) return;
     box.setAttribute("data-type", type);
     box.textContent = text;

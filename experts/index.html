@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>전문가 찾기 | 프롭피어</title>
+<meta name="description" content="분야·지역·자산 유형·상담 방식으로 검증된 부동산 전문가를 찾고, 검증 근거와 관계별 평점을 같은 기준으로 비교하세요.">
+<link rel="canonical" href="https://proppeer.co.kr/experts">
+<meta name="theme-color" content="#165DFF">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="프롭피어">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="전문가 찾기 | 프롭피어">
+<meta property="og:description" content="분야·지역·자산 유형·상담 방식으로 검증된 부동산 전문가를 찾고, 검증 근거와 관계별 평점을 같은 기준으로 비교하세요.">
+<meta property="og:url" content="https://proppeer.co.kr/experts">
+<meta property="og:image" content="https://proppeer.co.kr/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+</head>
+<body>
+<a class="pp-skip" href="#main">본문으로 건너뛰기</a>
+<header class="hd">
+  <div class="wrap hd__in">
+    <a class="logo" href="/" aria-label="프롭피어 홈">
+      <span class="logo__mark" aria-hidden="true">P</span>
+      <span class="logo__text"><span class="logo__ko">프롭피어</span><span class="logo__en">PROPPEER</span></span>
+    </a>
+    <nav class="gnb" aria-label="주요 메뉴">
+        <a href="/diagnosis">문제 해결</a>
+        <a href="/experts" aria-current="page">전문가 찾기</a>
+        <a href="/qna">무료 상담</a>
+        <a href="/service">서비스 소개</a>
+        <a href="/trust">검증 기준</a>
+        <a href="/cases">해결사례</a>
+    </nav>
+    <div class="hd__side">
+      <a class="hd__pro" href="/pro">전문가센터</a>
+      <a class="btn btn--primary btn--sm" href="/diagnosis" data-track="cta_header">내 문제 진단하기</a>
+      <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="pp-drawer" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="drawer" id="pp-drawer" data-drawer data-open="false">
+      <a href="/diagnosis">문제 해결</a>
+      <a href="/experts">전문가 찾기</a>
+      <a href="/qna">무료 상담</a>
+      <a href="/service">서비스 소개</a>
+      <a href="/trust">검증 기준</a>
+      <a href="/cases">해결사례</a>
+      <a href="/pro">전문가센터</a>
+      <a class="btn btn--primary btn--block" href="/diagnosis" data-track="cta_drawer">내 문제 진단하기</a>
+  </div>
+</header><main id="main">
+<div class="samplebar"><div class="wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>지금 보이는 전문가 정보는 화면 구성을 확인하기 위한 <b>예시 데이터</b>입니다. 실제 검증이 끝난 전문가로 교체한 뒤 공개합니다.</span></div></div>
+<section class="pagehead">
+  <div class="wrap">
+    <div class="crumb"><a href="/">홈</a> <span>›</span> <span>전문가 찾기</span></div>
+    <h1 class="pagehead__t">분야로, 또는 지역으로<br>찾으세요</h1>
+    <p class="pagehead__d">전문가마다 무엇이 확인됐고 무엇이 확인되지 않았는지, 상담 이후 어떤 이해관계가 생길 수 있는지를 같은 기준으로 보여드립니다. 어떤 분야가 필요한지 모르겠다면 <a class="textlink" href="/diagnosis">3분 진단</a>부터 시작하세요.</p>
+  </div>
+</section>
+
+<section class="band" style="padding-top:clamp(28px,3.4vw,44px)">
+  <div class="wrap">
+    
+<div class="bw" id="bw">
+  <div class="bw__tabs" role="tablist">
+    <button type="button" class="bw__tab" data-bwtab="field" role="tab" aria-selected="true">분야로 찾기</button>
+    <button type="button" class="bw__tab" data-bwtab="region" role="tab" aria-selected="false">지역으로 찾기</button>
+    <button type="button" class="bw__tab" data-showall>전체 전문가 보기</button>
+  </div>
+
+  <div class="bw__panel" data-bwpane="field">
+    <div class="cat">
+      <div class="cat__nav">
+        <button type="button" class="cat__navbtn" data-catnav="vacancy" aria-selected="true">공실·활용</button>
+        <button type="button" class="cat__navbtn" data-catnav="deal" aria-selected="false">매매·투자</button>
+        <button type="button" class="cat__navbtn" data-catnav="lease" aria-selected="false">임대차·분쟁</button>
+        <button type="button" class="cat__navbtn" data-catnav="permit" aria-selected="false">인허가·개발</button>
+        <button type="button" class="cat__navbtn" data-catnav="build" aria-selected="false">공사·시설</button>
+        <button type="button" class="cat__navbtn" data-catnav="tax" aria-selected="false">세금·자금</button>
+      </div>
+      <div>
+        <div class="cat__group" data-catgroup="vacancy">
+          <div class="cat__gt"><b>공실·활용</b><span>비어 있는 공간을 다시 쓰는 방법</span></div>
+          <div class="cat__items">
+            <button type="button" class="cat__item" data-pickfield="공실개발·공간기획|상업용 중개" data-picklabel="공실·활용 · 공실 임대">
+              <b>공실 임대</b><span>임차인 유치, 임대조건 재설계, 렌트프리, 장기공실</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="공실개발·공간기획|숙박·공간운영" data-picklabel="공실·활용 · 공간 전환·운영">
+              <b>공간 전환·운영</b><span>숙박, 스터디카페, 창고, 공유주방, 위탁운영</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="공실개발·공간기획|시공·인테리어" data-picklabel="공실·활용 · 건물 가치 개선">
+              <b>건물 가치 개선</b><span>리모델링, 외관 개선, 임대료 상승, 밸류애드</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat__group" data-catgroup="deal">
+          <div class="cat__gt"><b>매매·투자</b><span>사고팔기 전에 확인할 것</span></div>
+          <div class="cat__items">
+            <button type="button" class="cat__item" data-pickfield="상업용 중개|감정평가" data-picklabel="매매·투자 · 매입 검토">
+              <b>매입 검토</b><span>가격 적정성, 권리분석, 수익률, 실사</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="상업용 중개|감정평가" data-picklabel="매매·투자 · 매각·처분">
+              <b>매각·처분</b><span>매각가 산정, 매수인 협상, 매각 시점</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="상업용 중개|금융·PF" data-picklabel="매매·투자 · 수익형 부동산">
+              <b>수익형 부동산</b><span>상가, 오피스, 꼬마빌딩, 물류센터</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="부동산 법률|감정평가" data-picklabel="매매·투자 · 경매·공매">
+              <b>경매·공매</b><span>권리분석, 명도, 배당, 입찰가</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat__group" data-catgroup="lease">
+          <div class="cat__gt"><b>임대차·분쟁</b><span>빌려주고 빌리는 과정의 문제</span></div>
+          <div class="cat__items">
+            <button type="button" class="cat__item" data-pickfield="부동산 법률|상업용 중개" data-picklabel="임대차·분쟁 · 계약·갱신">
+              <b>계약·갱신</b><span>계약서 작성, 갱신요구권, 임대료 인상, 특약</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="부동산 법률|시공·인테리어" data-picklabel="임대차·분쟁 · 원상복구·명도">
+              <b>원상복구·명도</b><span>복구 범위, 명도, 내용증명, 강제집행</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="부동산 법률|상업용 중개" data-picklabel="임대차·분쟁 · 권리금·전대">
+              <b>권리금·전대</b><span>권리금 회수, 방해행위, 전대 동의</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="부동산 법률|시공·인테리어" data-picklabel="임대차·분쟁 · 하자·관리비">
+              <b>하자·관리비</b><span>누수, 시설 하자, 관리비 분담, 수선 의무</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat__group" data-catgroup="permit">
+          <div class="cat__gt"><b>인허가·개발</b><span>바꾸고 짓기 위한 절차</span></div>
+          <div class="cat__items">
+            <button type="button" class="cat__item" data-pickfield="건축·인허가" data-picklabel="인허가·개발 · 용도변경">
+              <b>용도변경</b><span>시설군 변경, 주차 대수, 소방, 정화조</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="건축·인허가|시공·인테리어" data-picklabel="인허가·개발 · 건축·증축·대수선">
+              <b>건축·증축·대수선</b><span>신축, 증축, 리모델링 설계, 사용승인</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="건축·인허가|부동산 법률" data-picklabel="인허가·개발 · 위반건축물">
+              <b>위반건축물</b><span>위반 해소, 이행강제금, 양성화</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="금융·PF|건축·인허가" data-picklabel="인허가·개발 · 개발사업">
+              <b>개발사업</b><span>사업성 검토, 지구단위, 인허가 일정</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat__group" data-catgroup="build">
+          <div class="cat__gt"><b>공사·시설</b><span>공사비와 시공 과정의 문제</span></div>
+          <div class="cat__items">
+            <button type="button" class="cat__item" data-pickfield="시공·인테리어" data-picklabel="공사·시설 · 견적 검토">
+              <b>견적 검토</b><span>항목 누락, 단가 적정성, 업체 비교</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="시공·인테리어|부동산 법률" data-picklabel="공사·시설 · 공사 계약">
+              <b>공사 계약</b><span>도급 계약, 지급 조건, 하자보수 보증</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="시공·인테리어|부동산 법률" data-picklabel="공사·시설 · 시공 분쟁">
+              <b>시공 분쟁</b><span>추가공사, 공기 지연, 하자 보수</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat__group" data-catgroup="tax">
+          <div class="cat__gt"><b>세금·자금</b><span>내야 할 돈과 빌릴 돈</span></div>
+          <div class="cat__items">
+            <button type="button" class="cat__item" data-pickfield="세무" data-picklabel="세금·자금 · 취득·보유세">
+              <b>취득·보유세</b><span>취득세, 재산세, 종부세, 중과</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="세무" data-picklabel="세금·자금 · 양도·법인">
+              <b>양도·법인</b><span>양도세, 법인 전환, 명의 구조</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="세무" data-picklabel="세금·자금 · 임대사업·부가세">
+              <b>임대사업·부가세</b><span>부가세 환급, 포괄양수도, 사업자등록</span>
+            </button>
+            <button type="button" class="cat__item" data-pickfield="금융·PF" data-picklabel="세금·자금 · 자금조달">
+              <b>자금조달</b><span>담보대출, PF, 리파이낸싱, 조건 비교</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bw__panel" data-bwpane="region" hidden>
+    <div class="map">
+      <p class="map__t">어느 지역의 부동산인가요?</p>
+      <p class="map__d">지도를 누르면 그 지역에서 활동하는 전문가를 보여드립니다. 전국 단위로 일하는 전문가는 어느 지역을 고르셔도 함께 나옵니다.</p>
+      <svg viewBox="0 0 360 500" role="group" aria-label="지역 선택 지도">
+          <g class="map__r" data-pickregion="경기" role="button" tabindex="0" aria-label="경기 전문가 보기">
+            <title>경기</title>
+            <path d="M96,58 L200,48 L208,134 L176,158 L104,146 L86,104 Z"/>
+            <text x="150" y="150">경기</text>
+          </g>
+          <g class="map__r" data-pickregion="강원" role="button" tabindex="0" aria-label="강원 전문가 보기">
+            <title>강원</title>
+            <path d="M208,134 L200,48 L250,42 L300,62 L318,102 L282,146 L254,152 Z"/>
+            <text x="258" y="96">강원</text>
+          </g>
+          <g class="map__r" data-pickregion="충북" role="button" tabindex="0" aria-label="충북 전문가 보기">
+            <title>충북</title>
+            <path d="M176,158 L208,134 L254,152 L250,214 L216,250 L196,198 Z"/>
+            <text x="222" y="182">충북</text>
+          </g>
+          <g class="map__r" data-pickregion="대전·세종·충남" role="button" tabindex="0" aria-label="대전·세종·충남 전문가 보기">
+            <title>대전·세종·충남</title>
+            <path d="M104,146 L176,158 L196,198 L120,238 L94,206 L90,170 Z"/>
+            <text x="136" y="196">대전·세종·충남</text>
+          </g>
+          <g class="map__r" data-pickregion="대구·경북" role="button" tabindex="0" aria-label="대구·경북 전문가 보기">
+            <title>대구·경북</title>
+            <path d="M254,152 L282,146 L322,170 L324,228 L302,274 L256,258 L218,276 L216,250 L250,214 Z"/>
+            <text x="284" y="210">대구·경북</text>
+          </g>
+          <g class="map__r" data-pickregion="전북" role="button" tabindex="0" aria-label="전북 전문가 보기">
+            <title>전북</title>
+            <path d="M120,238 L196,198 L216,250 L218,276 L196,302 L112,288 L98,252 Z"/>
+            <text x="154" y="268">전북</text>
+          </g>
+          <g class="map__r" data-pickregion="부산·울산·경남" role="button" tabindex="0" aria-label="부산·울산·경남 전문가 보기">
+            <title>부산·울산·경남</title>
+            <path d="M218,276 L256,258 L302,274 L306,312 L280,350 L232,360 L204,330 L196,302 Z"/>
+            <text x="254" y="312">부산·울산·경남</text>
+          </g>
+          <g class="map__r" data-pickregion="광주·전남" role="button" tabindex="0" aria-label="광주·전남 전문가 보기">
+            <title>광주·전남</title>
+            <path d="M112,288 L196,302 L204,330 L200,370 L164,398 L120,388 L94,352 L94,312 Z"/>
+            <text x="138" y="344">광주·전남</text>
+          </g>
+          <g class="map__r" data-pickregion="제주" role="button" tabindex="0" aria-label="제주 전문가 보기">
+            <title>제주</title>
+            <path d="M74,452 L110,444 L136,458 L130,480 L98,488 L74,476 Z"/>
+            <text x="104" y="468">제주</text>
+          </g>
+          <g class="map__r" data-pickregion="인천·부천" role="button" tabindex="0" aria-label="인천·부천 전문가 보기">
+            <title>인천·부천</title>
+            <path d="M64,100 L98,94 L106,114 L96,134 L70,134 L58,118 Z"/>
+            <text x="82" y="117">인천·부천</text>
+          </g>
+          <g class="map__r" data-pickregion="서울" role="button" tabindex="0" aria-label="서울 전문가 보기">
+            <title>서울</title>
+            <path d="M128,86 L158,82 L170,98 L164,114 L136,118 L122,102 Z"/>
+            <text x="146" y="102">서울</text>
+          </g>
+        </svg>
+      <div class="map__list">
+        <button type="button" class="map__chip" data-pickregion="서울">서울<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="경기">경기<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="인천·부천">인천·부천<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="강원">강원<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="대전·세종·충남">대전·세종·충남<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="충북">충북<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="대구·경북">대구·경북<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="부산·울산·경남">부산·울산·경남<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="광주·전남">광주·전남<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="전북">전북<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="제주">제주<b data-rcount>·</b></button>
+          <button type="button" class="map__chip" data-pickregion="전국">전국<b data-rcount>·</b></button>
+      </div>
+    </div>
+  </div>
+
+</div>
+    <div id="ex-root"></div>
+  </div>
+</section>
+
+<div class="tray" id="ex-tray" data-show="false" role="region" aria-label="비교함"></div>
+
+<div class="modal" id="ex-modal" data-open="false" role="dialog" aria-modal="true" aria-label="전문가 비교">
+  <div class="modal__box">
+    <div class="modal__hd">
+      <b>전문가 비교</b>
+      <button type="button" class="modal__x" data-closecmp aria-label="비교 닫기">×</button>
+    </div>
+    <div class="modal__body"></div>
+  </div>
+</div>
+
+<section class="band band--tint">
+  <div class="wrap wrap--narrow">
+    <div class="sec-head">
+      <span class="eyebrow">비교 기준</span>
+      <h2 class="sec-title">무엇을 보고 고르면 되나요?</h2>
+    </div>
+    <ul class="checks">
+      <li><strong>검증 프로젝트 수</strong>를 먼저 보세요. 경력 연수보다 실제로 맡은 역할이 확인된 건수가 더 많은 것을 말해줍니다.</li>
+      <li><strong>평점은 관계별로 나뉘어</strong> 있습니다. 상담고객 평점과 발주자·동료 평가를 합산하지 않습니다. 각자 볼 수 있는 면이 다르기 때문입니다.</li>
+      <li><strong>이해관계 표시를 확인하세요.</strong> 상담 이후 중개·설계·시공을 제안할 수 있는 전문가는 그 사실을 미리 밝히고 있습니다.</li>
+      <li><strong>검증되지 않은 항목도 그대로 보여드립니다.</strong> "자기 기재"는 전문가가 직접 적었고 아직 증빙을 확인하지 않은 정보입니다.</li>
+      <li><strong>최대 3명까지 비교함</strong>에 담아 조건을 나란히 놓고 볼 수 있습니다.</li>
+    </ul>
+    <p style="margin-top:22px"><a class="textlink" href="/trust">검증 기준 전체 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section></main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__top">
+      <div>
+        <span class="logo">
+          <span class="logo__mark" aria-hidden="true">P</span>
+          <span class="logo__text"><span class="logo__ko">프롭피어</span><span class="logo__en">PROPPEER</span></span>
+        </span>
+        <p class="ft__desc">부동산 문제를 진단하고, 검증된 전문가와 실제 해결 과정을 연결하는 부동산 문제 해결 플랫폼입니다.</p>
+      </div>
+      <div>
+        <p class="ft__ct">서비스</p>
+        <ul class="ft__list">
+          <li><a href="/diagnosis">문제 진단</a></li>
+          <li><a href="/experts">전문가 찾기</a></li>
+          <li><a href="/qna">무료 상담</a></li>
+          <li><a href="/service">서비스 소개</a></li>
+          <li><a href="/cases">해결사례</a></li>
+          <li><a href="/pro">전문가센터</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft__ct">신뢰</p>
+        <ul class="ft__list">
+          <li><a href="/trust">검증 기준</a></li>
+          <li><a href="/trust#review">후기 정책</a></li>
+          <li><a href="/trust#interest">이해관계 표시</a></li>
+          <li><a href="/trust#privacy">개인정보 처리</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="ft__ct">문의</p>
+        <ul class="ft__list">
+          <li><a href="#" data-email data-email-text>이메일</a></li>
+          <li><a href="#" data-tel>전화</a></li>
+          <li><a href="/pro">전문가 등록 문의</a></li>
+          <li><a href="#" data-app="ios">iOS 앱</a></li>
+          <li><a href="#" data-app="android">Android 앱</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft__bottom">
+      <p class="ft__legal">프롭피어는 이용자와 전문가를 연결하는 정보·예약·관리 플랫폼입니다. 법률·세무·중개 등 자격이 필요한 업무의 계약은 이용자와 해당 전문가 사이에 직접 체결되며, 프롭피어는 그 계약의 당사자가 아닙니다. 진단 결과와 AI 정리 기능은 상담 준비를 돕기 위한 것으로 확정적인 법률·세무·감정 판단을 제공하지 않습니다.</p>
+      <p>© <span data-year>2026</span> PropPeer. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/experts.js"></script>
+<script src="/assets/js/browse.js"></script>
+</body>
+</html>
