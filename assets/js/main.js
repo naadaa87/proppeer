@@ -247,6 +247,7 @@
         var kind = form.getAttribute("data-pp-form");
         var data = collect(form);
         data._form = kind;
+        data.kind = form.getAttribute("data-pp-subject") || kind;
         data._page = window.location.pathname;
         data._at = new Date().toISOString();
 

@@ -26,7 +26,8 @@ window.PROPPEER = {
      Formspree, Google Apps Script, Cloudflare Functions 등
      POST(JSON) 를 받는 주소를 넣으면 그쪽으로 전송합니다. */
   forms: {
-    endpoint: "",
+    /* 최시준 홈페이지 '전체 문의'가 대신 받아 저장하고 메일로 알려 줍니다 (2026-11-19) */
+    endpoint: "https://choisijun.com/api/lead",
     method: "POST"
   },
 

@@ -117,7 +117,23 @@
       var msg = form.msg.value.trim();
       var subject = "[프롭피어 가입 신청] " + name;
       var body = "이름: " + name + "\n역할군: " + role + "\n소속·직함: " + (org || "-") + "\n이메일: " + email + "\n\n전하실 말씀:\n" + (msg || "-") + "\n\n— PROPPEER 가입 신청 페이지에서 작성되었습니다.";
-      window.location.href = "mailto:" + CONTACT + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      var mail = function () { window.location.href = "mailto:" + CONTACT + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); };
+      var btn = form.querySelector("[type=submit]");
+      if (btn) btn.disabled = true;
+      /* 최시준 홈페이지 '전체 문의'로 접수 — 실패하면 메일 초안으로 */
+      fetch("https://choisijun.com/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=UTF-8" },
+        body: JSON.stringify({ kind: "가입 신청", name: name, role: role, org: org, email: email, message: msg, page: location.pathname })
+      }).then(function (r) {
+        if (!r.ok) throw new Error("bad");
+        form.reset();
+        var ok = document.createElement("p");
+        ok.className = "join-ok";
+        ok.setAttribute("role", "status");
+        ok.textContent = "가입 신청이 접수되었습니다. 확인 후 이메일로 안내드리겠습니다.";
+        form.appendChild(ok);
+      }).catch(mail).then(function () { if (btn) btn.disabled = false; });
     });
   }
 
