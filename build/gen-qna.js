@@ -170,6 +170,7 @@ function qnaDetail(page, q) {
   page({
     file: `qna/${q.slug}.html`,
     path: `/qna/${q.slug}`,
+    noindex: SAMPLE, // 예시 데이터인 동안은 검색에 올리지 않는다
     active: "/qna",
     title: q.title,
     desc: excerpt(q.body, 120),

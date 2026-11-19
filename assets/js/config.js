@@ -11,7 +11,7 @@ window.PROPPEER = {
     name: "프롭피어",
     nameEn: "PropPeer",
     tagline: "부동산 문제, 누구에게 물어봐야 할지부터 해결합니다.",
-    site: "https://proppeer.co.kr"
+    site: "https://proppeer.pages.dev"
   },
 
   /* 연락 채널 — 값을 비워두면 해당 링크가 화면에서 자동으로 숨겨집니다 */

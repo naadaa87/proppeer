@@ -2,8 +2,10 @@
 const fs = require("fs");
 const path = require("path");
 
-const OUT = "/home/claude/proppeer-web";
-const SITE = "https://proppeer.co.kr";
+const OUT = process.env.OUT_DIR || path.resolve(__dirname, "..");
+/* 대표 주소·사이트맵에 쓰이는 실제 접속 주소.
+   자체 도메인(proppeer.co.kr 등)을 연결하면 이 한 줄과 assets/js/config.js 의 brand.site 를 바꾸고 다시 생성합니다. */
+const SITE = process.env.SITE_URL || "https://proppeer.pages.dev";
 
 /* ---------- 아이콘 ---------- */
 const I = {
@@ -44,7 +46,7 @@ function head(o) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${title}</title>
 <meta name="description" content="${desc}">
-<link rel="canonical" href="${url}">
+<link rel="canonical" href="${url}">${o.noindex ? `\n<meta name="robots" content="noindex,follow">` : ""}
 <meta name="theme-color" content="#165DFF">
 <meta property="og:type" content="${o.article ? "article" : "website"}">
 <meta property="og:site_name" content="프롭피어">
@@ -159,7 +161,9 @@ ${extra || ""}
 </html>`;
 }
 
+const PAGES = []; // 사이트맵에 넣을 페이지 (색인 제외 페이지·404 는 빠짐)
 function page(o) {
+  if (!o.noindex && o.file !== "404.html") PAGES.push(o.path);
   const html =
     head(o) + header(o.active || "") + `<main id="main">` + o.body + `</main>` + footer() + tail(o.tail);
   const file = path.join(OUT, o.file);
@@ -1332,5 +1336,23 @@ EX.connectPage(page, PRODUCTS.map((p, i) => ({
 
 const QN = require("./gen-qna.js");
 QN.buildAll(page);
+
+/* =========================================================
+   sitemap.xml · robots.txt — 생성된 페이지 목록으로 함께 만든다
+   (예시 데이터로 채운 전문가 프로필·질문 상세는 색인 제외라 빠진다)
+   ========================================================= */
+const TODAY = new Date().toISOString().slice(0, 10);
+const prio = (p) => (p === "/" ? "1.0" : p.split("/").length > 2 ? "0.6" : "0.8");
+fs.writeFileSync(
+  path.join(OUT, "sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    PAGES.map((p) => `  <url>\n    <loc>${SITE}${p}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <priority>${prio(p)}</priority>\n  </url>\n`).join("") +
+    `</urlset>\n`
+);
+fs.writeFileSync(
+  path.join(OUT, "robots.txt"),
+  `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /diagnosis/result\nDisallow: /cdn-cgi/\n\nSitemap: ${SITE}/sitemap.xml\n`
+);
+console.log("✓ sitemap.xml", PAGES.length + "쪽", "· robots.txt");
 
 console.log("\n생성 완료");

@@ -1,177 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://proppeer.co.kr/</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://proppeer.pages.dev/</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/diagnosis</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/ask</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/diagnosis</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/service</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/service</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/trust</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/trust</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/pro</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/pro</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/connect</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://proppeer.pages.dev/cases</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/cases</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/cases/vacancy-to-lodging</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/cases/vacancy-to-lodging</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/cases/restoration-scope</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/cases/restoration-scope</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/cases/pre-purchase-review</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/cases/pre-purchase-review</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://proppeer.co.kr/experts/vacancy-planner-ko</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://proppeer.pages.dev/experts</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proppeer.pages.dev/connect</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proppeer.pages.dev/qna</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proppeer.pages.dev/qna/ask</loc>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/broker-commercial-nam</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/lawyer-realestate-seo</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/tax-accountant-yoon</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/architect-permit-jang</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/appraiser-min</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/builder-interior-oh</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/finance-pf-han</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/experts/space-operator-baek</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/vacancy-lodging-permit</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/restoration-excessive-demand</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/purchase-tenant-arrears</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/estimate-missing-items</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/corporate-vs-individual</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/long-vacancy-office</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://proppeer.co.kr/qna/illegal-building-purchase</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>

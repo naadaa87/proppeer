@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /diagnosis/result
+Disallow: /cdn-cgi/
 
-Sitemap: https://proppeer.co.kr/sitemap.xml
+Sitemap: https://proppeer.pages.dev/sitemap.xml

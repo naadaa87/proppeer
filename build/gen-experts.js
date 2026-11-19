@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA = JSON.parse(
-  fs.readFileSync("/home/claude/proppeer-web/assets/data/experts.json", "utf8")
+  fs.readFileSync(path.resolve(__dirname, "../assets/data/experts.json"), "utf8")
 );
 
 const T = DATA.taxonomy;
@@ -326,6 +326,7 @@ function expertProfile(page, e, products) {
   page({
     file: `experts/${e.slug}.html`,
     path: `/experts/${e.slug}`,
+    noindex: SAMPLE, // 예시 데이터인 동안은 검색에 올리지 않는다
     active: "/experts",
     title: `${e.name} ${e.title}`,
     desc: `${e.name} · ${e.org} · ${(e.fields || []).join(", ")}. ${String(e.intro).slice(0, 80)}`,
@@ -336,7 +337,7 @@ function expertProfile(page, e, products) {
       jobTitle: e.title,
       worksFor: { "@type": "Organization", name: e.org },
       knowsAbout: e.fields,
-      url: `https://proppeer.co.kr/experts/${e.slug}`
+      url: `${process.env.SITE_URL || "https://proppeer.pages.dev"}/experts/${e.slug}`
     },
     body: `
 ${sampleBar}
