@@ -151,7 +151,7 @@ function browsePanel() {
 /* ---------- 목록 페이지 ---------- */
 function expertsIndex(page) {
   page({
-    file: "experts/index.html",
+    file: "experts.html",
     path: "/experts",
     active: "/experts",
     title: "전문가 찾기",

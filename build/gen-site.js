@@ -1086,7 +1086,7 @@ page({
    cases index
    ========================================================= */
 page({
-  file: "cases/index.html",
+  file: "cases.html",
   path: "/cases",
   active: "/cases",
   title: "해결사례와 가이드",

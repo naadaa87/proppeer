@@ -65,7 +65,7 @@ function qnaIndex(page) {
     .join("\n      ");
 
   page({
-    file: "qna/index.html",
+    file: "qna.html",
     path: "/qna",
     active: "/qna",
     title: "무료 상담",
